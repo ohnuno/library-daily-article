@@ -41,7 +41,31 @@ HEADERS = {
 }
 
 GEMINI_MODEL = "gemini-2.5-flash"
+GEMINI_MODEL_FALLBACK = "gemini-2.0-flash"
 _gemini = google_genai.Client(api_key=GEMINI_API_KEY)
+
+
+def _gemini_generate(prompt: str, retries: int = 3) -> str:
+    """Gemini でテキスト生成。429 時はフォールバックモデルでリトライ"""
+    import time
+    models = [GEMINI_MODEL, GEMINI_MODEL_FALLBACK]
+    for attempt, model in enumerate(models):
+        for wait in [10, 30]:
+            try:
+                resp = _gemini.models.generate_content(model=model, contents=prompt)
+                return resp.text.strip()
+            except Exception as e:
+                msg = str(e)
+                if "429" in msg or "RESOURCE_EXHAUSTED" in msg:
+                    if wait == 10:
+                        print(f"[WARN] Gemini 429 on {model}, retrying in {wait}s...", file=sys.stderr)
+                        time.sleep(wait)
+                    else:
+                        print(f"[WARN] Gemini 429 on {model}, switching model...", file=sys.stderr)
+                        break  # 次のモデルへ
+                else:
+                    raise
+    raise RuntimeError("All Gemini models exhausted (429)")
 
 
 # ── Wikipedia ─────────────────────────────────────────────
@@ -90,8 +114,7 @@ def generate_keywords(event_text: str) -> list[str]:
         "出力はJSON配列のみ。例: [\"keyword1\", \"keyword2\", \"keyword3\"]\n\n"
         f"出来事: {event_text}"
     )
-    resp = _gemini.models.generate_content(model=GEMINI_MODEL, contents=prompt)
-    text = resp.text.strip()
+    text = _gemini_generate(prompt)
     m = re.search(r"\[.*?\]", text, re.DOTALL)
     if not m:
         raise ValueError(f"Unexpected Gemini response: {text[:100]}")
@@ -105,8 +128,7 @@ def generate_japanese_summary(abstract: str) -> str:
         "要約のみを出力し、前置きや説明は不要です。\n\n"
         f"Abstract: {abstract}"
     )
-    resp = _gemini.models.generate_content(model=GEMINI_MODEL, contents=prompt)
-    return resp.text.strip()
+    return _gemini_generate(prompt)
 
 
 # ── CrossRef ──────────────────────────────────────────────
