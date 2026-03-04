@@ -24,7 +24,10 @@ BASE_DIR = Path(__file__).parent.parent
 DATA_DIR = BASE_DIR / "data"
 
 TF_PDF_URL = "https://files.taylorandfrancis.com/ssh-title-list.pdf"
-JSTOR_KBART_URL = "https://www.jstor.org/kbart/collections/all-archive-titles?contentType=journals"
+JSTOR_KBART_URLS = [
+    "https://www.jstor.org/kbart/collections/asii",    # Arts & Sciences II
+    "https://www.jstor.org/kbart/collections/langlit",  # Language & Literature Collection
+]
 HEADERS = {
     "User-Agent": "tufs-daily-article/1.0 (ISSN updater; https://github.com/ohnuno/tufs-daily-article-dev)"
 }
@@ -96,18 +99,23 @@ def main():
     print(f"  Found {len(issns)} ISSNs.")
 
     # ── JSTOR ─────────────────────────────────────────────────
-    print("[3] Downloading JSTOR KBART title list...")
-    jstor_issns: list[str] = []
-    try:
-        resp = requests.get(JSTOR_KBART_URL, headers=HEADERS, timeout=60)
-        resp.raise_for_status()
-        jstor_issns = extract_issns_from_kbart(resp.text)
-        if not jstor_issns:
-            print("[WARN] No ISSNs found in JSTOR KBART file.", file=sys.stderr)
-        else:
-            print(f"  Found {len(jstor_issns)} ISSNs.")
-    except Exception as e:
-        print(f"[WARN] Failed to update JSTOR ISSN list: {e}", file=sys.stderr)
+    print("[3] Downloading JSTOR KBART title lists...")
+    jstor_issn_set: set[str] = set()
+    for url in JSTOR_KBART_URLS:
+        print(f"  Fetching: {url}")
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=60)
+            resp.raise_for_status()
+            found = extract_issns_from_kbart(resp.text)
+            jstor_issn_set.update(found)
+            print(f"  → {len(found)} ISSNs")
+        except Exception as e:
+            print(f"[WARN] Failed to fetch {url}: {e}", file=sys.stderr)
+    jstor_issns = sorted(jstor_issn_set)
+    if not jstor_issns:
+        print("[WARN] No ISSNs found in any JSTOR KBART file.", file=sys.stderr)
+    else:
+        print(f"  Total JSTOR ISSNs: {len(jstor_issns)}")
 
     # ── 更新 ──────────────────────────────────────────────────
     master["updated_at"] = today_str
@@ -117,7 +125,7 @@ def main():
         "issns": issns,
     }
     master["sources"]["jstor"] = {
-        "title_list_url": JSTOR_KBART_URL,
+        "title_list_urls": JSTOR_KBART_URLS,
         "issns": jstor_issns,
     }
 

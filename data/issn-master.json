@@ -6,7 +6,10 @@
       "issns": []
     },
     "jstor": {
-      "title_list_url": null,
+      "title_list_urls": [
+        "https://www.jstor.org/kbart/collections/asii",
+        "https://www.jstor.org/kbart/collections/langlit"
+      ],
       "issns": []
     }
   }
