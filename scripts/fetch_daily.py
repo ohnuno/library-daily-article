@@ -18,7 +18,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 import requests
-import google.generativeai as genai
+from google import genai as google_genai
 
 # ── 定数 ──────────────────────────────────────────────────
 JST = timezone(timedelta(hours=9))
@@ -40,9 +40,8 @@ HEADERS = {
     )
 }
 
-# Gemini 最大呼び出し回数を 3 回に抑える（キーワード生成×1 + 要約×1 + 余裕×1）
-genai.configure(api_key=GEMINI_API_KEY)
-_model = genai.GenerativeModel("gemini-2.5-flash")
+GEMINI_MODEL = "gemini-2.5-flash"
+_gemini = google_genai.Client(api_key=GEMINI_API_KEY)
 
 
 # ── Wikipedia ─────────────────────────────────────────────
@@ -91,7 +90,7 @@ def generate_keywords(event_text: str) -> list[str]:
         "出力はJSON配列のみ。例: [\"keyword1\", \"keyword2\", \"keyword3\"]\n\n"
         f"出来事: {event_text}"
     )
-    resp = _model.generate_content(prompt)
+    resp = _gemini.models.generate_content(model=GEMINI_MODEL, contents=prompt)
     text = resp.text.strip()
     m = re.search(r"\[.*?\]", text, re.DOTALL)
     if not m:
@@ -106,7 +105,7 @@ def generate_japanese_summary(abstract: str) -> str:
         "要約のみを出力し、前置きや説明は不要です。\n\n"
         f"Abstract: {abstract}"
     )
-    resp = _model.generate_content(prompt)
+    resp = _gemini.models.generate_content(model=GEMINI_MODEL, contents=prompt)
     return resp.text.strip()
 
 
