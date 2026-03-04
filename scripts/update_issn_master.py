@@ -1,10 +1,14 @@
 """
-月次バッチ: T&F SSH タイトルリスト PDF から ISSN マスタを更新する
+月次バッチ: ISSN マスタを更新する
+
+  - T&F SSH: タイトルリスト PDF からISSN抽出（pdfplumber）
+  - JSTOR: 公開 KBART ファイルから ISSN 抽出（print_identifier / online_identifier）
 
 実行方法:
     python scripts/update_issn_master.py
 """
 
+import csv
 import io
 import json
 import re
@@ -20,6 +24,7 @@ BASE_DIR = Path(__file__).parent.parent
 DATA_DIR = BASE_DIR / "data"
 
 TF_PDF_URL = "https://files.taylorandfrancis.com/ssh-title-list.pdf"
+JSTOR_KBART_URL = "https://www.jstor.org/kbart/collections/all-archive-titles?contentType=journals"
 HEADERS = {
     "User-Agent": "tufs-daily-article/1.0 (ISSN updater; https://github.com/ohnuno/tufs-daily-article-dev)"
 }
@@ -40,6 +45,23 @@ def extract_issns_from_pdf(pdf_bytes: bytes) -> list[str]:
             text = page.extract_text() or ""
             for m in ISSN_PATTERN.finditer(text):
                 issns.add(m.group(1).upper())
+    return sorted(issns)
+
+
+def extract_issns_from_kbart(text: str) -> list[str]:
+    """KBART TSV テキストから ISSN を抽出（print_identifier / online_identifier 列）"""
+    issns: set[str] = set()
+    try:
+        reader = csv.DictReader(io.StringIO(text), delimiter="\t")
+        for row in reader:
+            for field in ("print_identifier", "online_identifier"):
+                value = row.get(field, "").strip()
+                if ISSN_PATTERN.match(value):
+                    issns.add(value.upper())
+    except Exception:
+        # フォールバック: 正規表現で全文検索
+        for m in ISSN_PATTERN.finditer(text):
+            issns.add(m.group(1).upper())
     return sorted(issns)
 
 
@@ -73,6 +95,20 @@ def main():
 
     print(f"  Found {len(issns)} ISSNs.")
 
+    # ── JSTOR ─────────────────────────────────────────────────
+    print("[3] Downloading JSTOR KBART title list...")
+    jstor_issns: list[str] = []
+    try:
+        resp = requests.get(JSTOR_KBART_URL, headers=HEADERS, timeout=60)
+        resp.raise_for_status()
+        jstor_issns = extract_issns_from_kbart(resp.text)
+        if not jstor_issns:
+            print("[WARN] No ISSNs found in JSTOR KBART file.", file=sys.stderr)
+        else:
+            print(f"  Found {len(jstor_issns)} ISSNs.")
+    except Exception as e:
+        print(f"[WARN] Failed to update JSTOR ISSN list: {e}", file=sys.stderr)
+
     # ── 更新 ──────────────────────────────────────────────────
     master["updated_at"] = today_str
     master.setdefault("sources", {})
@@ -80,11 +116,18 @@ def main():
         "title_list_url": TF_PDF_URL,
         "issns": issns,
     }
+    master["sources"]["jstor"] = {
+        "title_list_url": JSTOR_KBART_URL,
+        "issns": jstor_issns,
+    }
 
     with open(master_path, "w", encoding="utf-8") as f:
         json.dump(master, f, ensure_ascii=False, indent=2)
 
-    print(f"[OK] issn-master.json updated ({len(issns)} ISSNs for T&F SSH).")
+    print(
+        f"[OK] issn-master.json updated "
+        f"(T&F SSH: {len(issns)}, JSTOR: {len(jstor_issns)} ISSNs)."
+    )
 
 
 if __name__ == "__main__":
