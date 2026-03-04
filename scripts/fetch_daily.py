@@ -97,11 +97,16 @@ def fetch_wikipedia_events(date: datetime) -> list[str]:
     section = match.group(1)
     # 箇条書き行（* または ** で始まる）を抽出
     lines = re.findall(r"^\*+\s*(.+)$", section, re.MULTILINE)
-    # WikiMarkup [[表示名|リンク]] → 表示名
-    events = [
-        re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]+)\]\]", r"\1", line).strip()
-        for line in lines
-    ]
+
+    def clean_wikitext(text: str) -> str:
+        text = re.sub(r"<ref[^>]*>.*?</ref>", "", text, flags=re.DOTALL)  # <ref>タグ除去
+        text = re.sub(r"<ref[^/]*/?>", "", text)                          # 自己閉じ<ref/>
+        text = re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]+)\]\]", r"\1", text)    # [[リンク]]→表示名
+        text = re.sub(r"\{\{[^}]*\}\}", "", text)                          # {{テンプレート}}除去
+        text = re.sub(r"'{2,}", "", text)                                  # ''太字''除去
+        return text.strip()
+
+    events = [clean_wikitext(line) for line in lines]
     return [e for e in events if len(e) > 5]
 
 
@@ -113,6 +118,20 @@ def generate_keywords(event_text: str) -> list[str]:
         "固有名詞よりも概念・分野語を優先すること。\n"
         "出力はJSON配列のみ。例: [\"keyword1\", \"keyword2\", \"keyword3\"]\n\n"
         f"出来事: {event_text}"
+    )
+    text = _gemini_generate(prompt)
+    m = re.search(r"\[.*?\]", text, re.DOTALL)
+    if not m:
+        raise ValueError(f"Unexpected Gemini response: {text[:100]}")
+    return json.loads(m.group())
+
+
+def broaden_keywords(keywords: list[str]) -> list[str]:
+    """キーワードをより広い学術概念に言い換え（フォールバック②用）"""
+    prompt = (
+        "次の学術論文検索キーワードをより広い・抽象的な概念に言い換えてください。\n"
+        "出力はJSON配列のみ。例: [\"keyword1\", \"keyword2\", \"keyword3\"]\n\n"
+        f"元のキーワード: {json.dumps(keywords, ensure_ascii=False)}"
     )
     text = _gemini_generate(prompt)
     m = re.search(r"\[.*?\]", text, re.DOTALL)
@@ -333,6 +352,31 @@ def main():
             flow = "primary"
     except Exception as e:
         print(f"[WARN] CrossRef search failed: {e}", file=sys.stderr)
+
+    # ── フォールバック②: Gemini キーワード言い換えで再検索 ──
+    if not paper_info:
+        print("[3b] Fallback ②: broadening keywords with Gemini...")
+        try:
+            broad_keywords = broaden_keywords(keywords_en)
+            print(f"  Broadened keywords: {broad_keywords}")
+            items = search_crossref(broad_keywords, issns_tf)
+            paper_info = pick_best_paper(items, databases)
+            if paper_info:
+                flow = "retry"
+        except Exception as e:
+            print(f"[WARN] Keyword broadening failed: {e}", file=sys.stderr)
+
+    # ── フォールバック③: JSTOR ISSN フィルタで再検索 ─────
+    if not paper_info:
+        issns_jstor = get_issns(issn_master, "jstor")
+        print(f"[3c] Fallback ③: searching CrossRef (JSTOR, {len(issns_jstor)} ISSNs)...")
+        try:
+            items = search_crossref(keywords_en, issns_jstor)
+            paper_info = pick_best_paper(items, databases)
+            if paper_info:
+                flow = "fallback-db"
+        except Exception as e:
+            print(f"[WARN] JSTOR fallback failed: {e}", file=sys.stderr)
 
     # ── ステップ 4（フォールバック④）: 教員著作論文 ───────
     if not paper_info:
