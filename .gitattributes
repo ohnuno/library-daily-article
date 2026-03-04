@@ -1,0 +1,8 @@
+# 全テキストファイルは LF で管理
+* text=auto eol=lf
+
+# バイナリ
+*.pdf binary
+*.png binary
+*.jpg binary
+*.ico binary

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>今日の論文 | 東京外国語大学図書館</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="tda-root"></div>
+
+  <script>
+    (function () {
+      const root = document.getElementById('tda-root');
+
+      // GitHub Pages からの相対パス
+      const DATA_URL = '../data/today.json';
+
+      function escapeHtml(str) {
+        if (!str) return '';
+        return String(str)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;');
+      }
+
+      function formatAuthors(authors) {
+        if (!authors || authors.length === 0) return '';
+        const displayed = authors.slice(0, 3).map(escapeHtml);
+        return displayed.join(' / ') + (authors.length > 3 ? ' ほか' : '');
+      }
+
+      function render(data) {
+        const p = data.paper;
+        const db = data.database;
+        const topic = data.today_topic;
+
+        // 日付表示（YYYY-MM-DD → M月D日）
+        const [, m, d] = (data.date || '').split('-');
+        const dateLabel = m && d ? `${parseInt(m)}月${parseInt(d)}日` : '';
+
+        const lockIcon = db.ip_restricted
+          ? '<span aria-hidden="true">🔒</span> '
+          : '';
+
+        root.innerHTML = `
+          <div class="tda-widget" role="region" aria-label="今日の論文ウィジェット">
+
+            <div class="tda-header">
+              📅 今日は何の日？ ― ${escapeHtml(dateLabel)}
+            </div>
+
+            <div class="tda-topic">
+              ${escapeHtml(topic.text || '')}
+            </div>
+
+            <div class="tda-paper">
+              <div class="tda-paper-title">
+                📄 ${escapeHtml(p.title)}
+              </div>
+              <div class="tda-paper-meta">
+                ${formatAuthors(p.authors)}
+                ${p.journal ? ' ／ ' + escapeHtml(p.journal) : ''}
+                ${p.year ? ' ／ ' + escapeHtml(String(p.year)) : ''}
+              </div>
+
+              ${p.abstract_ja ? `
+                <div class="tda-abstract">
+                  ${escapeHtml(p.abstract_ja)}
+                </div>
+              ` : ''}
+
+              ${p.doi_url ? `
+                <a class="tda-btn tda-btn-primary"
+                   href="${escapeHtml(p.doi_url)}"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  この論文を読む →
+                </a>
+              ` : ''}
+            </div>
+
+            <div class="tda-db">
+              <div class="tda-db-label">この論文が読めるデータベース</div>
+              <div class="tda-db-name">${escapeHtml(db.name)}</div>
+              <div class="tda-db-desc">${escapeHtml(db.description)}</div>
+
+              ${db.access_note ? `
+                <div class="tda-access-note">
+                  ${lockIcon}${escapeHtml(db.access_note)}
+                </div>
+              ` : ''}
+
+              ${db.url ? `
+                <a class="tda-btn tda-btn-secondary"
+                   href="${escapeHtml(db.url)}"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  データベースへアクセス →
+                </a>
+              ` : ''}
+            </div>
+
+          </div>
+        `;
+      }
+
+      function renderError(msg) {
+        root.innerHTML = `
+          <div class="tda-widget">
+            <div class="tda-error">${escapeHtml(msg)}</div>
+          </div>
+        `;
+      }
+
+      // ── データ取得 ──────────────────────────────────────
+      root.innerHTML = `
+        <div class="tda-widget">
+          <div class="tda-loading">読み込み中…</div>
+        </div>
+      `;
+
+      fetch(DATA_URL)
+        .then(function (res) {
+          if (!res.ok) throw new Error('データの取得に失敗しました（' + res.status + '）');
+          return res.json();
+        })
+        .then(render)
+        .catch(function (err) {
+          renderError('コンテンツを読み込めませんでした。しばらく後にお試しください。');
+          console.error('[tufs-daily-article]', err);
+        });
+    })();
+  </script>
+</body>
+</html>

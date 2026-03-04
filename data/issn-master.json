@@ -1,0 +1,13 @@
+{
+  "updated_at": null,
+  "sources": {
+    "taylor-francis-ssh": {
+      "title_list_url": "https://files.taylorandfrancis.com/ssh-title-list.pdf",
+      "issns": []
+    },
+    "jstor": {
+      "title_list_url": null,
+      "issns": []
+    }
+  }
+}

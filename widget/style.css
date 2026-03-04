@@ -1,0 +1,164 @@
+/* tufs-daily-article widget styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #1a4f8a;
+  --color-accent:  #c8102e;
+  --color-bg:      #ffffff;
+  --color-surface: #f5f7fa;
+  --color-border:  #dde2ea;
+  --color-text:    #1a1a1a;
+  --color-muted:   #5a6272;
+  --color-lock:    #c8102e;
+  --radius:        6px;
+  --font:          -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.tda-widget {
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  max-width: 420px;
+  min-width: 320px;
+  overflow: hidden;
+}
+
+/* ── ヘッダー ─────────────────────────────────────────── */
+.tda-header {
+  background: var(--color-primary);
+  color: #ffffff;
+  padding: 10px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+/* ── 今日の出来事 ────────────────────────────────────── */
+.tda-topic {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding: 10px 14px;
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+/* ── 論文情報 ─────────────────────────────────────────── */
+.tda-paper {
+  padding: 14px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tda-paper-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.tda-paper-meta {
+  font-size: 12px;
+  color: var(--color-muted);
+  margin-bottom: 10px;
+}
+
+.tda-abstract {
+  font-size: 13px;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border-left: 3px solid var(--color-primary);
+  padding: 8px 10px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin-bottom: 12px;
+}
+
+.tda-btn {
+  display: inline-block;
+  padding: 7px 16px;
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.tda-btn:hover {
+  opacity: 0.85;
+}
+
+.tda-btn-primary {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.tda-btn-secondary {
+  background: var(--color-surface);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+/* ── DB情報 ──────────────────────────────────────────── */
+.tda-db {
+  padding: 14px;
+}
+
+.tda-db-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-muted);
+  margin-bottom: 4px;
+}
+
+.tda-db-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 6px;
+}
+
+.tda-db-desc {
+  font-size: 12px;
+  color: var(--color-muted);
+  margin-bottom: 10px;
+}
+
+.tda-access-note {
+  font-size: 12px;
+  color: var(--color-lock);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+/* ── ローディング・エラー ────────────────────────────── */
+.tda-loading,
+.tda-error {
+  padding: 24px 14px;
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 13px;
+}
+
+.tda-error {
+  color: var(--color-accent);
+}
+
+/* ── レスポンシブ ─────────────────────────────────────── */
+@media (max-width: 380px) {
+  .tda-widget {
+    min-width: 0;
+    width: 100%;
+  }
+}

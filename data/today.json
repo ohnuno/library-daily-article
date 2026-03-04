@@ -1,0 +1,30 @@
+{
+  "date": "2026-03-04",
+  "generated_at": "2026-03-04T00:30:00+09:00",
+  "flow": "primary",
+  "today_topic": {
+    "text": "1877年：エジソンが蓄音機の特許を取得した",
+    "keywords_ja": ["エジソン", "蓄音機", "特許"],
+    "keywords_en": ["phonograph", "sound recording", "acoustic technology", "patent history"]
+  },
+  "paper": {
+    "title": "The Political Economy of Sound Recording",
+    "authors": ["Smith, J.", "Brown, K."],
+    "journal": "Media, Culture & Society",
+    "issn": "0163-4437",
+    "year": 2019,
+    "doi": "10.1177/0163443718810526",
+    "doi_url": "https://doi.org/10.1177/0163443718810526",
+    "abstract_original": "This article examines the political economy of sound recording technology from its invention to the digital era.",
+    "abstract_ja": "本論文は、録音技術の発明からデジタル時代に至るまでの政治経済学的側面を考察する。音楽産業における権力構造と技術革新の相互作用を分析し、録音メディアの変遷が文化的・経済的に与えた影響を明らかにする。",
+    "db_id": "taylor-francis-ssh"
+  },
+  "database": {
+    "id": "taylor-francis-ssh",
+    "name": "Taylor & Francis SSH Library",
+    "description": "社会科学・人文科学分野の1,400誌以上を収録するジャーナルパッケージ。1997年以降のバックファイルにアクセス可能。",
+    "url": "https://www.tandfonline.com/",
+    "access_note": "大学ネットワークまたはVPN接続が必要",
+    "ip_restricted": true
+  }
+}

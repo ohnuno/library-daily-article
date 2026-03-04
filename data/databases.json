@@ -1,0 +1,22 @@
+[
+  {
+    "id": "taylor-francis-ssh",
+    "name": "Taylor & Francis SSH Library",
+    "description": "社会科学・人文科学分野の1,400誌以上を収録するジャーナルパッケージ。1997年以降のバックファイルにアクセス可能。",
+    "url": "https://www.tandfonline.com/",
+    "doi_domain": "tandfonline.com",
+    "access_note": "大学ネットワークまたはVPN接続が必要",
+    "ip_restricted": true,
+    "fields": ["社会科学", "人文科学", "教育", "経済", "言語学", "地理", "法学", "心理学", "社会学"]
+  },
+  {
+    "id": "jstor",
+    "name": "JSTOR",
+    "description": "人文・社会科学を中心とした学術雑誌・図書のアーカイブデータベース。",
+    "url": "https://www.jstor.org/",
+    "doi_domain": "jstor.org",
+    "access_note": "大学ネットワークまたはVPN接続が必要",
+    "ip_restricted": true,
+    "fields": ["人文科学", "社会科学", "歴史", "文学", "哲学"]
+  }
+]
