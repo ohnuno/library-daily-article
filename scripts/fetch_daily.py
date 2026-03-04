@@ -449,6 +449,25 @@ def main():
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 
+    # ── アーカイブ保存 ─────────────────────────────────────
+    archive_dir = DATA_DIR / "archive"
+    archive_dir.mkdir(exist_ok=True)
+    archive_path = archive_dir / f"{today_str}.json"
+    with open(archive_path, "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=2)
+
+    index_path = DATA_DIR / "archive-index.json"
+    if index_path.exists():
+        with open(index_path, encoding="utf-8") as f:
+            dates: list[str] = json.load(f)
+    else:
+        dates = []
+    if today_str not in dates:
+        dates.insert(0, today_str)
+    dates = sorted(set(dates), reverse=True)[:365]  # 最大1年分
+    with open(index_path, "w", encoding="utf-8") as f:
+        json.dump(dates, f, ensure_ascii=False, indent=2)
+
     print(f"[OK] today.json written: date={today_str}, flow={flow}")
     print(f"     Paper: {paper_info.get('title', 'N/A')[:70]}")
 

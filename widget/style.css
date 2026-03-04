@@ -142,6 +142,23 @@
   gap: 4px;
 }
 
+/* ── アーカイブリンク ────────────────────────────────── */
+.tda-archive-link {
+  padding: 6px 14px;
+  border-bottom: 1px solid var(--color-border);
+  text-align: right;
+}
+
+.tda-archive-link a {
+  font-size: 11px;
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.tda-archive-link a:hover {
+  text-decoration: underline;
+}
+
 /* ── ローディング・エラー ────────────────────────────── */
 .tda-loading,
 .tda-error {

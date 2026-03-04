@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>過去の論文一覧 | 東京外国語大学図書館</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 16px;
+    }
+    .tda-archive-container {
+      max-width: 460px;
+      margin: 0 auto;
+    }
+    .tda-archive-nav {
+      margin-bottom: 12px;
+    }
+    .tda-archive-nav a {
+      font-size: 13px;
+      color: #1a4f8a;
+      text-decoration: none;
+    }
+    .tda-archive-nav a:hover { text-decoration: underline; }
+    .tda-archive-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 10px;
+    }
+    .tda-date-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .tda-date-list li button {
+      background: #fff;
+      border: 1px solid #dde2ea;
+      border-radius: 4px;
+      padding: 4px 10px;
+      font-size: 12px;
+      cursor: pointer;
+      color: #1a4f8a;
+      transition: background 0.1s;
+    }
+    .tda-date-list li button:hover,
+    .tda-date-list li button.active {
+      background: #1a4f8a;
+      color: #fff;
+      border-color: #1a4f8a;
+    }
+    .tda-archive-loading {
+      padding: 20px 0;
+      text-align: center;
+      color: #5a6272;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="tda-archive-container">
+    <div class="tda-archive-nav">
+      <a href="./index.html">← 今日の論文に戻る</a>
+    </div>
+    <div class="tda-archive-title">過去の論文一覧</div>
+    <ul class="tda-date-list" id="tda-date-list">
+      <li><span class="tda-archive-loading">読み込み中…</span></li>
+    </ul>
+    <div id="tda-root"></div>
+  </div>
+
+  <script>
+    (function () {
+      const INDEX_URL   = '../data/archive-index.json';
+      const ARCHIVE_BASE = '../data/archive/';
+      const dateList = document.getElementById('tda-date-list');
+      const root     = document.getElementById('tda-root');
+      let activeBtn  = null;
+
+      function escapeHtml(str) {
+        if (!str) return '';
+        return String(str)
+          .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      }
+
+      function formatAuthors(authors) {
+        if (!authors || authors.length === 0) return '';
+        return authors.slice(0, 3).map(escapeHtml).join(' / ') +
+               (authors.length > 3 ? ' ほか' : '');
+      }
+
+      function formatDateLabel(dateStr) {
+        const [, m, d] = (dateStr || '').split('-');
+        return m && d ? `${parseInt(m)}月${parseInt(d)}日` : dateStr;
+      }
+
+      function render(data) {
+        const p     = data.paper;
+        const db    = data.database;
+        const topic = data.today_topic;
+        const dateLabel = formatDateLabel(data.date);
+        const lockIcon  = db.ip_restricted ? '<span aria-hidden="true">🔒</span> ' : '';
+
+        root.innerHTML = `
+          <div class="tda-widget" role="region" aria-label="論文ウィジェット">
+            <div class="tda-header">
+              📅 今日は何の日？ ― ${escapeHtml(dateLabel)}
+            </div>
+            <div class="tda-topic">${escapeHtml(topic.text || '')}</div>
+            <div class="tda-paper">
+              <div class="tda-paper-title">📄 ${escapeHtml(p.title)}</div>
+              <div class="tda-paper-meta">
+                ${formatAuthors(p.authors)}
+                ${p.journal ? ' ／ ' + escapeHtml(p.journal) : ''}
+                ${p.year    ? ' ／ ' + escapeHtml(String(p.year)) : ''}
+              </div>
+              ${p.abstract_ja ? `<div class="tda-abstract">${escapeHtml(p.abstract_ja)}</div>` : ''}
+              ${p.doi_url ? `
+                <a class="tda-btn tda-btn-primary"
+                   href="${escapeHtml(p.doi_url)}"
+                   target="_blank" rel="noopener noreferrer">
+                  この論文を読む →
+                </a>` : ''}
+            </div>
+            <div class="tda-db">
+              <div class="tda-db-label">この論文が読めるデータベース</div>
+              <div class="tda-db-name">${escapeHtml(db.name)}</div>
+              <div class="tda-db-desc">${escapeHtml(db.description)}</div>
+              ${db.access_note ? `
+                <div class="tda-access-note">
+                  ${lockIcon}${escapeHtml(db.access_note)}
+                </div>` : ''}
+              ${db.url ? `
+                <a class="tda-btn tda-btn-secondary"
+                   href="${escapeHtml(db.url)}"
+                   target="_blank" rel="noopener noreferrer">
+                  データベースへアクセス →
+                </a>` : ''}
+            </div>
+          </div>`;
+      }
+
+      function loadArticle(dateStr, btn) {
+        if (activeBtn) activeBtn.classList.remove('active');
+        activeBtn = btn;
+        btn.classList.add('active');
+        root.innerHTML = '<div class="tda-archive-loading">読み込み中…</div>';
+        fetch(ARCHIVE_BASE + dateStr + '.json')
+          .then(function (res) {
+            if (!res.ok) throw new Error(res.status);
+            return res.json();
+          })
+          .then(render)
+          .catch(function () {
+            root.innerHTML = '<div class="tda-widget"><div class="tda-error">データを読み込めませんでした。</div></div>';
+          });
+      }
+
+      // ── 日付リスト取得 ──
+      fetch(INDEX_URL)
+        .then(function (res) {
+          if (!res.ok) throw new Error(res.status);
+          return res.json();
+        })
+        .then(function (dates) {
+          dateList.innerHTML = '';
+          if (!dates || dates.length === 0) {
+            dateList.innerHTML = '<li><span style="font-size:13px;color:#5a6272;">記事がまだありません。</span></li>';
+            return;
+          }
+          dates.forEach(function (dateStr, i) {
+            const li  = document.createElement('li');
+            const btn = document.createElement('button');
+            btn.textContent = formatDateLabel(dateStr);
+            btn.setAttribute('aria-label', dateStr + 'の論文を表示');
+            btn.addEventListener('click', function () { loadArticle(dateStr, btn); });
+            li.appendChild(btn);
+            dateList.appendChild(li);
+            if (i === 0) loadArticle(dateStr, btn);  // 最新を自動表示
+          });
+        })
+        .catch(function () {
+          dateList.innerHTML = '<li><span style="font-size:13px;color:#c8102e;">一覧の取得に失敗しました。</span></li>';
+        });
+    })();
+  </script>
+</body>
+</html>

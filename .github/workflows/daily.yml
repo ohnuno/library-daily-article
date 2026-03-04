@@ -32,7 +32,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/today.json
+          git add data/today.json data/archive/
           git diff --staged --quiet || \
             git commit -m "chore: update today's article [$(date +%Y-%m-%d)]"
           git push
