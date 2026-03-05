@@ -36,7 +36,7 @@ WIKIPEDIA_BASE = "https://ja.wikipedia.org/w/api.php"
 HEADERS = {
     "User-Agent": (
         f"daily-article/1.0 "
-        f"(https://github.com/ohnuno/tufs-daily-article; mailto:{CONTACT_EMAIL})"
+        f"(https://github.com/ohnuno/library-daily-article; mailto:{CONTACT_EMAIL})"
     )
 }
 

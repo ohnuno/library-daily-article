@@ -3,7 +3,7 @@
  *
  * 使い方:
  *   <div id="daily-article-widget"></div>
- *   <script src="https://{username}.github.io/tufs-daily-article/widget/widget.js"></script>
+ *   <script src="https://{username}.github.io/library-daily-article/widget/widget.js"></script>
  *
  * オプション（script タグの前に定義）:
  *   window.TDA_VPN_URL = 'https://your-institution.ac.jp/vpn';
