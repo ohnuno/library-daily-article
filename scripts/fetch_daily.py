@@ -222,18 +222,19 @@ def extract_paper_info(item: dict, db_id: str) -> dict | None:
 
 
 def pick_best_paper(items: list[dict], databases: dict) -> dict | None:
-    """Abstract があるものを優先して 1 件選択"""
-    for item in items:
+    """優先順位: ①journal-article+抄録あり > ②journal-article > ③その他+抄録あり > ④先頭"""
+    def priority(item):
+        is_article = item.get("type", "") == "journal-article"
+        has_abstract = bool(re.sub(r"<[^>]+>", "", item.get("abstract", "")).strip())
+        return (is_article, has_abstract)
+
+    sorted_items = sorted(items, key=priority, reverse=True)
+    for item in sorted_items:
         doi = item.get("DOI", "")
         db_id = determine_db_id(doi, databases)
         info = extract_paper_info(item, db_id)
-        if info and info.get("abstract_original"):
+        if info:
             return info
-    # Abstract なしでもヒットがあれば先頭を採用
-    if items:
-        doi = items[0].get("DOI", "")
-        db_id = determine_db_id(doi, databases)
-        return extract_paper_info(items[0], db_id)
     return None
 
 
