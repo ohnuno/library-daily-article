@@ -164,7 +164,7 @@ def generate_connection(event_text: str, paper_title: str, keywords: list[str]) 
 
 
 # ── CrossRef ──────────────────────────────────────────────
-def search_crossref(keywords: list[str], issns: list[str], rows: int = 5) -> list[dict]:
+def search_crossref(keywords: list[str], issns: list[str], rows: int = 10) -> list[dict]:
     """CrossRef API で論文を検索。issns が空なら ISSN フィルタなし"""
     params: dict = {
         "query": " ".join(keywords),
@@ -205,8 +205,11 @@ def extract_paper_info(item: dict, db_id: str) -> dict | None:
     abstract = re.sub(r"<[^>]+>", "", item.get("abstract", "")).strip()
     issn = next(iter(item.get("ISSN", [])), "")
 
+    raw_title = re.sub(r"<[^>]+>", "", titles[0])
+    clean_title = re.sub(r"\s+", " ", raw_title).strip()
+
     return {
-        "title": titles[0],
+        "title": clean_title,
         "authors": authors,
         "journal": journal,
         "issn": issn,
@@ -285,7 +288,7 @@ def search_faculty_papers(issns_tf: list[str]) -> list[dict]:
     # a. ROR ID
     params: dict = {
         "filter": f"affiliation.id:{ROR_ID}",
-        "rows": 5,
+        "rows": 10,
         "sort": "relevance",
         "mailto": CONTACT_EMAIL,
     }
@@ -304,7 +307,7 @@ def search_faculty_papers(issns_tf: list[str]) -> list[dict]:
     # b. affiliation 文字列
     params2: dict = {
         "query.affiliation": "Tokyo University of Foreign Studies",
-        "rows": 5,
+        "rows": 10,
         "sort": "relevance",
         "mailto": CONTACT_EMAIL,
     }
