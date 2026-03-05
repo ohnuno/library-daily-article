@@ -142,7 +142,7 @@
       fetch(CONFIG.DATA_URL)
         .then(res => { if (!res.ok) throw new Error(res.status); return res.json(); })
         .then(render)
-        .catch(err => { renderError(); console.error('[tufs-daily-article]', err); });
+        .catch(err => { renderError(); console.error('[daily-article]', err); });
     })();
   </script>
 </body>

@@ -29,7 +29,7 @@ JSTOR_KBART_URLS = [
     "https://www.jstor.org/kbart/collections/langlit",  # Language & Literature Collection
 ]
 HEADERS = {
-    "User-Agent": "tufs-daily-article/1.0 (ISSN updater; https://github.com/ohnuno/tufs-daily-article)"
+    "User-Agent": "daily-article/1.0 (ISSN updater; https://github.com/ohnuno/tufs-daily-article)"
 }
 ISSN_PATTERN = re.compile(r"\b(\d{4}-\d{3}[\dXx])\b")
 

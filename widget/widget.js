@@ -1,8 +1,8 @@
 /**
- * tufs-daily-article 埋め込み用 JS スニペット
+ * daily-article 埋め込み用 JS スニペット
  *
  * 使い方:
- *   <div id="tufs-daily-article"></div>
+ *   <div id="daily-article-widget"></div>
  *   <script src="https://{username}.github.io/tufs-daily-article/widget/widget.js"></script>
  *
  * オプション（script タグの前に定義）:
@@ -25,9 +25,9 @@
   var VPN_URL     = (window.TDA_VPN_URL || '');
   var ARCHIVE_URL = baseUrl + 'archive.html';
 
-  var container = document.getElementById('tufs-daily-article');
+  var container = document.getElementById('daily-article-widget');
   if (!container) {
-    console.warn('[tufs-daily-article] #tufs-daily-article が見つかりません。');
+    console.warn('[daily-article] #daily-article-widget が見つかりません。');
     return;
   }
 
@@ -168,11 +168,11 @@
       try {
         render(JSON.parse(xhr.responseText));
       } catch (e) {
-        console.error('[tufs-daily-article]', e);
+        console.error('[daily-article]', e);
         renderError();
       }
     } else {
-      console.error('[tufs-daily-article] fetch failed:', xhr.status);
+      console.error('[daily-article] fetch failed:', xhr.status);
       renderError();
     }
   };

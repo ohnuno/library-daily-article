@@ -26,7 +26,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           CONTACT_EMAIL:  ${{ secrets.CONTACT_EMAIL }}
-          TUFS_ROR_ID:    https://ror.org/03f4q9q08
+          ROR_ID:         https://ror.org/03f4q9q08
 
       - name: Commit and push
         run: |

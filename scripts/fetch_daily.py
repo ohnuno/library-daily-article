@@ -27,7 +27,7 @@ DATA_DIR = BASE_DIR / "data"
 
 GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
 CONTACT_EMAIL = os.environ["CONTACT_EMAIL"]
-TUFS_ROR_ID = os.environ.get("TUFS_ROR_ID", "https://ror.org/03f4q9q08")
+ROR_ID = os.environ.get("ROR_ID", "https://ror.org/03f4q9q08")
 
 CROSSREF_BASE = "https://api.crossref.org/works"
 UNPAYWALL_BASE = "https://api.unpaywall.org/v2"
@@ -35,7 +35,7 @@ WIKIPEDIA_BASE = "https://ja.wikipedia.org/w/api.php"
 
 HEADERS = {
     "User-Agent": (
-        f"tufs-daily-article/1.0 "
+        f"daily-article/1.0 "
         f"(https://github.com/ohnuno/tufs-daily-article; mailto:{CONTACT_EMAIL})"
     )
 }
@@ -284,7 +284,7 @@ def search_faculty_papers(issns_tf: list[str]) -> list[dict]:
 
     # a. ROR ID
     params: dict = {
-        "filter": f"affiliation.id:{TUFS_ROR_ID}",
+        "filter": f"affiliation.id:{ROR_ID}",
         "rows": 5,
         "sort": "relevance",
         "mailto": CONTACT_EMAIL,
