@@ -359,7 +359,8 @@ def main():
         keywords_en = generate_keywords(event)
     except Exception as e:
         print(f"[WARN] Keyword generation failed: {e}", file=sys.stderr)
-        keywords_en = ["linguistics", "language", "culture", "society"]
+        # Gemini失敗時はWikipedia出来事テキストをそのままクエリに使用（CrossRefは日本語テキストも検索可能）
+        keywords_en = [event_text] if event_text else ["humanities", "social science", "history"]
     print(f"  Keywords: {keywords_en}")
 
     # ── ステップ 3: CrossRef 検索（① T&F SSH）─────────────
