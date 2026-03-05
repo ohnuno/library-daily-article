@@ -111,6 +111,19 @@ def fetch_wikipedia_events(date: datetime) -> list[str]:
 
 
 # ── Gemini ────────────────────────────────────────────────
+def extract_fallback_keywords(event_text: str) -> list[str]:
+    """Gemini が使えない場合の簡易キーワード抽出（助詞前の塊 or 「」内テキスト）"""
+    # 助詞/句読点の前の最初の塊（例: "治安維持法に" → "治安維持法"）
+    m = re.match(r'^([^\sにがをでのはへもや、。「」]{3,15})', event_text)
+    if m:
+        return [m.group(1)]
+    # 「...」内のテキスト
+    quoted = re.findall(r'「([^」]+)」', event_text)
+    if quoted:
+        return quoted[:3]
+    return [event_text[:15].rstrip('にがをでのはへもや、。')]
+
+
 def generate_keywords(event_text: str) -> list[str]:
     """出来事テキストから学術英語キーワードを生成"""
     prompt = (
@@ -282,38 +295,45 @@ def determine_db_id(doi: str, databases: dict) -> str:
 
 
 # ── フォールバック④: 教員著作論文 ────────────────────────
-def search_faculty_papers(issns_tf: list[str]) -> list[dict]:
-    """ROR ID → affiliation 文字列の順で教員著作論文を検索"""
-    issn_filter = ",".join(f"issn:{issn}" for issn in issns_tf[:200]) if issns_tf else ""
+def search_faculty_papers(issns_tf: list[str], keywords: list[str] | None = None) -> list[dict]:
+    """ROR ID → affiliation 文字列の順で教員著作論文を検索。
+    ISSN フィルタを ROR フィルタと組み合わせると URL が長すぎて 400 になるため、
+    ROR 検索では ISSN フィルタを使わずポスト絞り込みで対応する。"""
+    issns_set = set(issns_tf)
+    keyword_query = " ".join(keywords) if keywords else ""
 
-    # a. ROR ID
+    # a. ROR ID（ISSN フィルタなし）
     params: dict = {
         "filter": f"affiliation.id:{ROR_ID}",
         "rows": 10,
         "sort": "relevance",
         "mailto": CONTACT_EMAIL,
     }
-    if issn_filter:
-        params["filter"] += f",{issn_filter}"
+    if keyword_query:
+        params["query"] = keyword_query
 
     try:
         resp = requests.get(CROSSREF_BASE, params=params, headers=HEADERS, timeout=30)
         resp.raise_for_status()
         items = resp.json()["message"]["items"]
         if items:
-            return items
+            # 契約 ISSN に含まれる論文を優先して返す（なければ全件）
+            contracted = [i for i in items if bool(set(i.get("ISSN", [])) & issns_set)]
+            return contracted if contracted else items
     except Exception as e:
         print(f"[WARN] ROR search failed: {e}", file=sys.stderr)
 
-    # b. affiliation 文字列
+    # b. affiliation 文字列（ISSN フィルタは 50 件に制限して URL 超過を回避）
     params2: dict = {
         "query.affiliation": "Tokyo University of Foreign Studies",
         "rows": 10,
         "sort": "relevance",
         "mailto": CONTACT_EMAIL,
     }
-    if issn_filter:
-        params2["filter"] = issn_filter
+    if keyword_query:
+        params2["query"] = keyword_query
+    if issns_tf:
+        params2["filter"] = ",".join(f"issn:{issn}" for issn in issns_tf[:50])
 
     try:
         resp = requests.get(CROSSREF_BASE, params=params2, headers=HEADERS, timeout=30)
@@ -363,8 +383,7 @@ def main():
         keywords_en = generate_keywords(event)
     except Exception as e:
         print(f"[WARN] Keyword generation failed: {e}", file=sys.stderr)
-        # Gemini失敗時はWikipedia出来事テキストをそのままクエリに使用（CrossRefは日本語テキストも検索可能）
-        keywords_en = [event_text] if event_text else ["humanities", "social science", "history"]
+        keywords_en = extract_fallback_keywords(event_text) if event_text else ["humanities", "social science", "history"]
     print(f"  Keywords: {keywords_en}")
 
     # ── ステップ 3: CrossRef 検索（① T&F SSH）─────────────
@@ -409,7 +428,7 @@ def main():
     if not paper_info:
         print("[4] Fallback: searching faculty papers (ROR / affiliation)...")
         try:
-            fb_items = search_faculty_papers(issns_tf)
+            fb_items = search_faculty_papers(issns_tf, keywords_en)
             paper_info = pick_best_paper(fb_items, databases)
             if paper_info:
                 flow = "fallback-faculty"
