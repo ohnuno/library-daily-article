@@ -150,6 +150,19 @@ def generate_japanese_summary(abstract: str) -> str:
     return _gemini_generate(prompt)
 
 
+def generate_connection(event_text: str, paper_title: str, keywords: list[str]) -> str:
+    """出来事と論文の関連を1文で説明する（<strong>タグでキーワードを1箇所囲む）"""
+    prompt = (
+        "今日の出来事と紹介する論文の関連を1文で説明してください。\n"
+        "文中の最も重要なキーワードを1箇所だけ<strong>〜</strong>タグで囲んでください。\n"
+        "出力は1文のみ。前置きや説明は不要です。\n\n"
+        f"出来事: {event_text}\n"
+        f"論文タイトル: {paper_title}\n"
+        f"関連キーワード: {', '.join(keywords)}"
+    )
+    return _gemini_generate(prompt)
+
+
 # ── CrossRef ──────────────────────────────────────────────
 def search_crossref(keywords: list[str], issns: list[str], rows: int = 5) -> list[dict]:
     """CrossRef API で論文を検索。issns が空なら ISSN フィルタなし"""
@@ -331,6 +344,15 @@ def main():
     event = random.choice(events)
     print(f"  Selected event: {event}")
 
+    # 出来事テキストから年と本文を分離（例: "2004年 - ..." → year="2004", text="..."）
+    event_match = re.match(r'^(\d{4})年\s*[-－]\s*(.+)$', event)
+    if event_match:
+        event_year = event_match.group(1)
+        event_text = event_match.group(2)
+    else:
+        event_year = ""
+        event_text = event
+
     # ── ステップ 2: Gemini キーワード生成 ─────────────────
     print("[2] Generating keywords with Gemini...")
     try:
@@ -409,6 +431,19 @@ def main():
         except Exception as e:
             print(f"[WARN] Summary generation failed: {e}", file=sys.stderr)
 
+    # ── ステップ 6b: Gemini 接続説明文 ────────────────────
+    connection = ""
+    if paper_info.get("title"):
+        print("[6b] Generating connection text with Gemini...")
+        try:
+            connection = generate_connection(event, paper_info["title"], keywords_en)
+        except Exception as e:
+            print(f"[WARN] Connection text generation failed: {e}", file=sys.stderr)
+
+    # 著者文字列を整形（筆頭著者 + "ほか"）
+    authors_list = paper_info.get("authors", [])
+    author_str = authors_list[0] + (" ほか" if len(authors_list) > 1 else "") if authors_list else ""
+
     # ── ステップ 7: today.json 生成 ───────────────────────
     db_id = paper_info.get("db_id", next(iter(databases), "unknown"))
     db_meta = databases.get(db_id, {})
@@ -418,6 +453,12 @@ def main():
         "date": today_str,
         "generated_at": generated_at,
         "flow": flow,
+        # 新形式: event（year + text 分離）
+        "event": {
+            "year": event_year,
+            "text": event_text,
+        },
+        # 旧形式互換: today_topic（archive の古いデータ向けに保持）
         "today_topic": {
             "text": event,
             "keywords_ja": keywords_ja,
@@ -425,7 +466,9 @@ def main():
         },
         "paper": {
             "title": paper_info.get("title", ""),
-            "authors": paper_info.get("authors", []),
+            "author": author_str,                          # 新: 単一文字列
+            "authors": paper_info.get("authors", []),      # 旧互換
+            "connection": connection,                      # 新: 接続説明文
             "journal": paper_info.get("journal", ""),
             "issn": paper_info.get("issn", ""),
             "year": paper_info.get("year"),

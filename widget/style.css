@@ -1,181 +1,303 @@
-/* tufs-daily-article widget styles */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* tufs-daily-article — UI Redesign (牡丹色テーマ) */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 24px 16px;
 }
 
-:root {
-  --color-primary: #1a4f8a;
-  --color-accent:  #c8102e;
-  --color-bg:      #ffffff;
-  --color-surface: #f5f7fa;
-  --color-border:  #dde2ea;
-  --color-text:    #1a1a1a;
-  --color-muted:   #5a6272;
-  --color-lock:    #c8102e;
-  --radius:        6px;
-  --font:          -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-}
-
-.tda-widget {
-  font-family: var(--font);
-  font-size: 14px;
-  line-height: 1.6;
-  color: var(--color-text);
-  background: var(--color-bg);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
+.widget {
+  width: 100%;
   max-width: 420px;
-  min-width: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.15);
+  background: #fff;
+}
+
+/* ── ヘッダー ── */
+.header {
+  background: linear-gradient(135deg, #7a1f4a 0%, #b5406e 60%, #d4688f 100%);
+  padding: 20px 20px 16px;
+  position: relative;
   overflow: hidden;
 }
-
-/* ── ヘッダー ─────────────────────────────────────────── */
-.tda-header {
-  background: var(--color-primary);
-  color: #ffffff;
-  padding: 10px 14px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.03em;
+.header::before {
+  content: '';
+  position: absolute;
+  top: -40px; right: -40px;
+  width: 160px; height: 160px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.07);
 }
-
-/* ── 今日の出来事 ────────────────────────────────────── */
-.tda-topic {
-  background: var(--color-surface);
-  border-bottom: 1px solid var(--color-border);
-  padding: 10px 14px;
-  font-size: 13px;
-  color: var(--color-muted);
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: -20px; left: 30px;
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
 }
-
-/* ── 論文情報 ─────────────────────────────────────────── */
-.tda-paper {
-  padding: 14px;
-  border-bottom: 1px solid var(--color-border);
-}
-
-.tda-paper-title {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--color-primary);
-  margin-bottom: 4px;
-  line-height: 1.4;
-}
-
-.tda-paper-meta {
-  font-size: 12px;
-  color: var(--color-muted);
-  margin-bottom: 10px;
-}
-
-.tda-abstract {
-  font-size: 13px;
-  color: var(--color-text);
-  background: var(--color-surface);
-  border-left: 3px solid var(--color-primary);
-  padding: 8px 10px;
-  border-radius: 0 var(--radius) var(--radius) 0;
-  margin-bottom: 12px;
-}
-
-.tda-btn {
-  display: inline-block;
-  padding: 7px 16px;
-  border-radius: var(--radius);
-  font-size: 13px;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-  transition: opacity 0.15s;
-}
-
-.tda-btn:hover {
-  opacity: 0.85;
-}
-
-.tda-btn-primary {
-  background: var(--color-primary);
-  color: #ffffff;
-}
-
-.tda-btn-secondary {
-  background: var(--color-surface);
-  color: var(--color-primary);
-  border: 1px solid var(--color-primary);
-}
-
-/* ── DB情報 ──────────────────────────────────────────── */
-.tda-db {
-  padding: 14px;
-}
-
-.tda-db-label {
+.header-label {
   font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--color-muted);
-  margin-bottom: 4px;
-}
-
-.tda-db-name {
-  font-size: 15px;
   font-weight: 700;
-  color: var(--color-primary);
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.65);
+  text-transform: uppercase;
   margin-bottom: 6px;
 }
+.header-date {
+  font-family: 'DM Serif Display', serif;
+  font-size: 28px;
+  color: #fff;
+  line-height: 1.1;
+}
+.header-date span {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 22px;
+}
 
-.tda-db-desc {
+/* ── 出来事セクション ── */
+.event-section {
+  background: linear-gradient(90deg, #fdf5f8 0%, #f7e8ef 100%);
+  padding: 14px 20px;
+  border-left: 3px solid #b5406e;
+}
+.event-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #b5406e;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.event-text {
+  font-size: 13px;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+.event-year {
+  font-weight: 700;
+  color: #7a1f4a;
+}
+
+/* ── 接続説明 ── */
+.connection-section {
+  padding: 14px 20px 10px;
+  border-bottom: 1px solid #f0e8ed;
+}
+.connection-text {
+  font-size: 12.5px;
+  color: #546e8a;
+  line-height: 1.7;
+  padding: 10px 14px;
+  background: #fdf5f8;
+  border-radius: 3px;
+  border-left: 3px solid #b5406e;
+}
+.connection-text strong {
+  color: #7a1f4a;
+}
+
+/* ── 論文カード ── */
+.paper-card {
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid #f0e8ed;
+}
+.paper-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 15px;
+  color: #1a2a4a;
+  line-height: 1.55;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+/* 抄録ボックス */
+.abstract-box {
+  background: #fdf5f8;
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+}
+.abstract-text {
+  font-size: 12.5px;
+  color: #3a4e66;
+  line-height: 1.75;
+  margin-bottom: 6px;
+}
+.abstract-note {
+  font-size: 10.5px;
+  color: #a0afc0;
+}
+
+/* メタ情報（著者・掲載誌・出版年） */
+.paper-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 11.5px;
+  color: #8a9bb0;
+  margin-bottom: 14px;
+}
+.paper-meta span {
+  display: flex;
+  align-items: center;
+}
+
+/* 主ボタン */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #7a1f4a, #b5406e);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  box-shadow: 0 4px 14px rgba(181,64,110,0.35);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(181,64,110,0.45);
+}
+
+/* 過去記事リンク */
+.past-link {
+  display: block;
+  text-align: right;
+  font-size: 11.5px;
+  color: #8a9bb0;
+  padding: 8px 20px 0;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.past-link:hover { color: #b5406e; }
+
+/* ── DBカード ── */
+.db-card {
+  margin: 12px 16px 16px;
+  background: linear-gradient(135deg, #fdf5f8 0%, #f7e8ef 100%);
+  border: 1px solid #e8c4d4;
+  border-radius: 14px;
+  padding: 16px;
+}
+.db-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #8a9bb0;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.db-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #7a1f4a;
+  margin-bottom: 6px;
+}
+.db-desc {
   font-size: 12px;
-  color: var(--color-muted);
+  color: #546e8a;
+  line-height: 1.65;
+  margin-bottom: 12px;
+}
+.vpn-notice {
+  font-size: 11.5px;
+  color: #c0392b;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 
-.tda-access-note {
-  font-size: 12px;
-  color: var(--color-lock);
-  margin-bottom: 12px;
+/* VPNアクセスエリア（QR＋リンク） */
+.vpn-access {
   display: flex;
-  align-items: flex-start;
-  gap: 4px;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #e8c4d4;
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
 }
-
-/* ── アーカイブリンク ────────────────────────────────── */
-.tda-archive-link {
-  padding: 6px 14px;
-  border-bottom: 1px solid var(--color-border);
-  text-align: right;
+.vpn-qr {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 6px;
+  overflow: hidden;
 }
-
-.tda-archive-link a {
-  font-size: 11px;
-  color: var(--color-muted);
+.vpn-qr img {
+  width: 56px;
+  height: 56px;
+  display: block;
+}
+.vpn-link-area { flex: 1; }
+.vpn-link-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #8a9bb0;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.vpn-link {
+  font-size: 12px;
+  color: #b5406e;
+  font-weight: 600;
   text-decoration: none;
+  word-break: break-all;
+}
+.vpn-link:hover { text-decoration: underline; }
+
+/* 副ボタン */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  color: #7a1f4a;
+  font-size: 12.5px;
+  font-weight: 700;
+  padding: 9px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  border: 1.5px solid #b5406e;
+  letter-spacing: 0.03em;
+  transition: background 0.15s, color 0.15s;
+}
+.btn-secondary:hover {
+  background: #b5406e;
+  color: #fff;
 }
 
-.tda-archive-link a:hover {
-  text-decoration: underline;
-}
-
-/* ── ローディング・エラー ────────────────────────────── */
-.tda-loading,
-.tda-error {
-  padding: 24px 14px;
+/* ── ローディング・エラー ── */
+.tda-loading {
+  padding: 40px 20px;
   text-align: center;
-  color: var(--color-muted);
+  color: #8a9bb0;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 13px;
+}
+.tda-error {
+  padding: 40px 20px;
+  text-align: center;
+  color: #c0392b;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 13px;
 }
 
-.tda-error {
-  color: var(--color-accent);
-}
-
-/* ── レスポンシブ ─────────────────────────────────────── */
-@media (max-width: 380px) {
-  .tda-widget {
-    min-width: 0;
-    width: 100%;
-  }
+/* ── レスポンシブ ── */
+@media (max-width: 460px) {
+  body { padding: 0; align-items: flex-start; }
+  .widget { border-radius: 0; box-shadow: none; }
 }
