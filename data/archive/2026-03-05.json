@@ -1,35 +1,34 @@
 {
   "date": "2026-03-05",
-  "generated_at": "2026-03-05T16:52:19+09:00",
-  "flow": "primary",
+  "generated_at": "2026-03-05T17:17:13+09:00",
+  "flow": "fallback-faculty",
   "event": {
-    "year": "1946",
-    "text": "ウィンストン・チャーチル英首相が米ミズーリ州でソ連を非難する「鉄のカーテン」の演説を行う。冷戦の始まり。"
+    "year": "1929",
+    "text": "治安維持法に反対していた山本宣治・元衆議院議員が右翼団体「七生義団」の黒田保久二により刺殺される。"
   },
   "today_topic": {
-    "text": "1946年 - ウィンストン・チャーチル英首相が米ミズーリ州でソ連を非難する「鉄のカーテン」の演説を行う。冷戦の始まり。",
+    "text": "1929年 - 治安維持法に反対していた山本宣治・元衆議院議員が右翼団体「七生義団」の黒田保久二により刺殺される。",
     "keywords_ja": [
-      "ウィンストン・チャーチル英首相が米ミズーリ州でソ連を非難する",
-      "鉄のカーテン",
-      "の演説を行う",
-      "冷戦の始まり"
+      "治安維持法に反対していた山本宣治・元衆議院議員が右翼団体",
+      "七生義団",
+      "の黒田保久二により刺殺される"
     ],
     "keywords_en": [
-      "ウィンストン・チャーチル英首相が米ミズーリ州でソ連を非難する「鉄のカーテン」の演説を行う。冷戦の始まり。"
+      "治安維持法に反対していた山本宣治・元衆議院議員が右翼団体「七生義団」の黒田保久二により刺殺される。"
     ]
   },
   "paper": {
-    "title": "Onodera Shirō 小野寺史郎,\n            <i>Sengo Nihon no Chūgokukan: Ajia to Kindai wo Meguru Kattō</i>\n            戦後日本の中国観:アジアと近代をめぐる葛藤 (China in Postwar Japan: Entanglements around Asia and the Modern Era)",
-    "author": "Siyu, M.",
+    "title": "Adventurers: The improbable rise of the East India Company, 1550–1650 Adventurers: The improbable rise of the East India Company, 1550–1650 by D. HowarthYale University Press, 2023, £25 (hb), £12.99 (pb) 480 pages, illustrations, index ISBN 9780300250725",
+    "author": "Good, P.",
     "authors": [
-      "Siyu, M."
+      "Good, P."
     ],
     "connection": "",
-    "journal": "Chinese Studies in History",
-    "issn": "0009-4633",
+    "journal": "The Mariner's Mirror",
+    "issn": "0025-3359",
     "year": 2024,
-    "doi": "10.1080/00094633.2024.2439760",
-    "doi_url": "https://doi.org/10.1080/00094633.2024.2439760",
+    "doi": "10.1080/00253359.2024.2340215",
+    "doi_url": "https://doi.org/10.1080/00253359.2024.2340215",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
