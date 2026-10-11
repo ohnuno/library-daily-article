@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-12",
+  "generated_at": "2026-10-12T04:37:35+09:00",
+  "flow": "primary",
+  "event": {
+    "year": "1939",
+    "text": "栃木県日光町内で、東武日光線の下り電車が脱線して河原へ転落。死者18人、負傷者87人。"
+  },
+  "today_topic": {
+    "text": "1939年 - 栃木県日光町内で、東武日光線の下り電車が脱線して河原へ転落。死者18人、負傷者87人。",
+    "keywords_ja": [
+      "栃木県日光町内で",
+      "東武日光線の下り電車が脱線して河原へ転落",
+      "死者",
+      "負傷者"
+    ],
+    "keywords_en": [
+      "栃木県日光町内"
+    ]
+  },
+  "paper": {
+    "title": "Kindai Nihon no Chūgokugaku: Sono Hikari to Kage 近代日本の中国学 ―その光と影(Chinese Studies in Modern Japan: The Light and Shadow)",
+    "author": "Shutaro, M.",
+    "authors": [
+      "Shutaro, M."
+    ],
+    "connection": "",
+    "journal": "Chinese Studies in History",
+    "issn": "0009-4633",
+    "year": 2026,
+    "doi": "10.1080/00094633.2026.2699031",
+    "doi_url": "https://doi.org/10.1080/00094633.2026.2699031",
+    "abstract_original": "",
+    "abstract_ja": "",
+    "db_id": "taylor-francis-ssh"
+  },
+  "database": {
+    "id": "taylor-francis-ssh",
+    "name": "Taylor & Francis SSH Library",
+    "description": "社会科学・人文科学分野の1,400誌以上を収録するジャーナルパッケージ。1997年以降のバックファイルにアクセス可能。",
+    "url": "https://www.tandfonline.com/",
+    "access_note": "大学ネットワークまたはVPN接続が必要",
+    "ip_restricted": true
+  }
+}

@@ -1,32 +1,35 @@
 {
-  "date": "2026-10-11",
-  "generated_at": "2026-10-11T04:25:14+09:00",
+  "date": "2026-10-12",
+  "generated_at": "2026-10-12T04:37:35+09:00",
   "flow": "primary",
   "event": {
-    "year": "2008",
-    "text": "アメリカが北朝鮮に対するテロ支援国家指定を解除。"
+    "year": "1939",
+    "text": "栃木県日光町内で、東武日光線の下り電車が脱線して河原へ転落。死者18人、負傷者87人。"
   },
   "today_topic": {
-    "text": "2008年 - アメリカが北朝鮮に対するテロ支援国家指定を解除。",
+    "text": "1939年 - 栃木県日光町内で、東武日光線の下り電車が脱線して河原へ転落。死者18人、負傷者87人。",
     "keywords_ja": [
-      "アメリカが北朝鮮に対するテロ支援国家指定を解除"
+      "栃木県日光町内で",
+      "東武日光線の下り電車が脱線して河原へ転落",
+      "死者",
+      "負傷者"
     ],
     "keywords_en": [
-      "アメリカ"
+      "栃木県日光町内"
     ]
   },
   "paper": {
-    "title": "アメリカの排日運動と日米関係 = Amerika No Hainichi Undō to Nichibei Kankei [the Anti-Japanese Movement in America and Us-Japan Relations]: 「排日移民法」はなぜ成立した か = Hainichi Iminhō Wa Naze Seiritsushitaka [The Reason Behind the Japanese Exclusion]. Asahi Sensho, 942.",
-    "author": "Kawamura, N.",
+    "title": "Kindai Nihon no Chūgokugaku: Sono Hikari to Kage 近代日本の中国学 ―その光と影(Chinese Studies in Modern Japan: The Light and Shadow)",
+    "author": "Shutaro, M.",
     "authors": [
-      "Kawamura, N."
+      "Shutaro, M."
     ],
     "connection": "",
-    "journal": "Pacific Affairs",
-    "issn": "0030-851X",
-    "year": 2017,
-    "doi": "10.1080/17153379.2017.12557805",
-    "doi_url": "https://doi.org/10.1080/17153379.2017.12557805",
+    "journal": "Chinese Studies in History",
+    "issn": "0009-4633",
+    "year": 2026,
+    "doi": "10.1080/00094633.2026.2699031",
+    "doi_url": "https://doi.org/10.1080/00094633.2026.2699031",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
