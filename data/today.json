@@ -1,35 +1,32 @@
 {
-  "date": "2026-10-12",
-  "generated_at": "2026-10-12T04:37:35+09:00",
+  "date": "2026-10-13",
+  "generated_at": "2026-10-13T07:32:15+09:00",
   "flow": "primary",
   "event": {
-    "year": "1939",
-    "text": "栃木県日光町内で、東武日光線の下り電車が脱線して河原へ転落。死者18人、負傷者87人。"
+    "year": "1962",
+    "text": "バレーボール世界選手権で日紡貝塚単独チームの女子全日本代表が完全優勝。"
   },
   "today_topic": {
-    "text": "1939年 - 栃木県日光町内で、東武日光線の下り電車が脱線して河原へ転落。死者18人、負傷者87人。",
+    "text": "1962年 - バレーボール世界選手権で日紡貝塚単独チームの女子全日本代表が完全優勝。",
     "keywords_ja": [
-      "栃木県日光町内で",
-      "東武日光線の下り電車が脱線して河原へ転落",
-      "死者",
-      "負傷者"
+      "バレーボール世界選手権で日紡貝塚単独チームの女子全日本代表が完全優勝"
     ],
     "keywords_en": [
-      "栃木県日光町内"
+      "バレーボール世界選手権"
     ]
   },
   "paper": {
-    "title": "Kindai Nihon no Chūgokugaku: Sono Hikari to Kage 近代日本の中国学 ―その光と影(Chinese Studies in Modern Japan: The Light and Shadow)",
-    "author": "Shutaro, M.",
+    "title": "Pan Guangzhe 潘光哲, Chuangzao jindai Zhongguo de “shijie zhishi” 創造近代中國的「世界知識」(The Making of “World Knowledge” in Modern China).Pan Guangzhe 潘光哲, Chuangzao jindai Zhongguo de “shijie zhishi” 創造近代中國的「世界知識」(The Making of “World Knowledge” in Modern China). Beijing: Social Sciences Academic Press (China), 2019. xviii, 326 pp. Paper, ￥98, ISBN: 978-7-5201-4942-6.",
+    "author": "Zhou, Y.",
     "authors": [
-      "Shutaro, M."
+      "Zhou, Y."
     ],
     "connection": "",
     "journal": "Chinese Studies in History",
     "issn": "0009-4633",
-    "year": 2026,
-    "doi": "10.1080/00094633.2026.2699031",
-    "doi_url": "https://doi.org/10.1080/00094633.2026.2699031",
+    "year": 2023,
+    "doi": "10.1080/00094633.2023.2289810",
+    "doi_url": "https://doi.org/10.1080/00094633.2023.2289810",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
