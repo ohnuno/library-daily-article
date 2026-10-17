@@ -1,30 +1,33 @@
 {
-  "date": "2026-10-14",
-  "generated_at": "2026-10-14T05:45:34+09:00",
+  "date": "2026-10-18",
+  "generated_at": "2026-10-18T02:53:09+09:00",
   "flow": "primary",
   "event": {
-    "year": "",
-    "text": "2024年   -"
+    "year": "2019",
+    "text": "チリ暴動が激化。サンティアゴ地下鉄の駅舎などが襲撃を受けて放火された。"
   },
   "today_topic": {
-    "text": "2024年   -",
-    "keywords_ja": [],
+    "text": "2019年 - チリ暴動が激化。サンティアゴ地下鉄の駅舎などが襲撃を受けて放火された。",
+    "keywords_ja": [
+      "チリ暴動が激化",
+      "サンティアゴ地下鉄の駅舎などが襲撃を受けて放火された"
+    ],
     "keywords_en": [
-      "2024年"
+      "チリ暴動"
     ]
   },
   "paper": {
-    "title": "China’s Pathway towards Maritime Civilisation",
-    "author": "Zou, X.",
+    "title": "Di Wang 王 笛, Paoge: 1940 Niandai Chuanxi Xiangcun de Baoli yu Zhixu 袍哥: 1940年代川西鄉村的暴力與秩序 (Paoge: Violence and Order in Rural Western Sichuan in the 1940s)",
+    "author": "Li, G.",
     "authors": [
-      "Zou, X."
+      "Li, G."
     ],
     "connection": "",
-    "journal": "Journal of Contemporary Asia",
-    "issn": "0047-2336",
-    "year": 2019,
-    "doi": "10.1080/00472336.2019.1600712",
-    "doi_url": "https://doi.org/10.1080/00472336.2019.1600712",
+    "journal": "Chinese Studies in History",
+    "issn": "0009-4633",
+    "year": 2026,
+    "doi": "10.1080/00094633.2026.2710594",
+    "doi_url": "https://doi.org/10.1080/00094633.2026.2710594",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"

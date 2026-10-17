@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-18",
+  "generated_at": "2026-10-18T02:53:09+09:00",
+  "flow": "primary",
+  "event": {
+    "year": "2019",
+    "text": "チリ暴動が激化。サンティアゴ地下鉄の駅舎などが襲撃を受けて放火された。"
+  },
+  "today_topic": {
+    "text": "2019年 - チリ暴動が激化。サンティアゴ地下鉄の駅舎などが襲撃を受けて放火された。",
+    "keywords_ja": [
+      "チリ暴動が激化",
+      "サンティアゴ地下鉄の駅舎などが襲撃を受けて放火された"
+    ],
+    "keywords_en": [
+      "チリ暴動"
+    ]
+  },
+  "paper": {
+    "title": "Di Wang 王 笛, Paoge: 1940 Niandai Chuanxi Xiangcun de Baoli yu Zhixu 袍哥: 1940年代川西鄉村的暴力與秩序 (Paoge: Violence and Order in Rural Western Sichuan in the 1940s)",
+    "author": "Li, G.",
+    "authors": [
+      "Li, G."
+    ],
+    "connection": "",
+    "journal": "Chinese Studies in History",
+    "issn": "0009-4633",
+    "year": 2026,
+    "doi": "10.1080/00094633.2026.2710594",
+    "doi_url": "https://doi.org/10.1080/00094633.2026.2710594",
+    "abstract_original": "",
+    "abstract_ja": "",
+    "db_id": "taylor-francis-ssh"
+  },
+  "database": {
+    "id": "taylor-francis-ssh",
+    "name": "Taylor & Francis SSH Library",
+    "description": "社会科学・人文科学分野の1,400誌以上を収録するジャーナルパッケージ。1997年以降のバックファイルにアクセス可能。",
+    "url": "https://www.tandfonline.com/",
+    "access_note": "大学ネットワークまたはVPN接続が必要",
+    "ip_restricted": true
+  }
+}
