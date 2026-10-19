@@ -1,34 +1,35 @@
 {
-  "date": "2026-10-19",
-  "generated_at": "2026-10-19T03:13:55+09:00",
+  "date": "2026-10-20",
+  "generated_at": "2026-10-20T05:39:38+09:00",
   "flow": "primary",
   "event": {
-    "year": "1900",
-    "text": "日本で伊藤博文が第10代内閣総理大臣に就任し、第4次伊藤内閣が発足。"
+    "year": "1993",
+    "text": "新右翼「風の会」代表の野村秋介が朝日新聞東京本社に乱入、社長室で拳銃自殺。"
   },
   "today_topic": {
-    "text": "1900年 - 日本で伊藤博文が第10代内閣総理大臣に就任し、第4次伊藤内閣が発足。",
+    "text": "1993年 - 新右翼「風の会」代表の野村秋介が朝日新聞東京本社に乱入、社長室で拳銃自殺。",
     "keywords_ja": [
-      "日本で伊藤博文が第",
-      "代内閣総理大臣に就任し",
-      "次伊藤内閣が発足"
+      "新右翼",
+      "風の会",
+      "代表の野村秋介が朝日新聞東京本社に乱入",
+      "社長室で拳銃自殺"
     ],
     "keywords_en": [
-      "日本で伊藤博文が第10代内閣総"
+      "新右翼"
     ]
   },
   "paper": {
-    "title": "Onodera Shirō 小野寺史郎, Sengo Nihon no Chūgokukan: Ajia to Kindai wo Meguru Kattō 戦後日本の中国観:アジアと近代をめぐる葛藤 (China in Postwar Japan: Entanglements around Asia and the Modern Era)",
-    "author": "Siyu, M.",
+    "title": "Fanghai zhi dao: Mingdai zhili fanghai yanjiu",
+    "author": "Guang, M.",
     "authors": [
-      "Siyu, M."
+      "Guang, M."
     ],
     "connection": "",
     "journal": "Chinese Studies in History",
     "issn": "0009-4633",
-    "year": 2024,
-    "doi": "10.1080/00094633.2024.2439760",
-    "doi_url": "https://doi.org/10.1080/00094633.2024.2439760",
+    "year": 2025,
+    "doi": "10.1080/00094633.2025.2497173",
+    "doi_url": "https://doi.org/10.1080/00094633.2025.2497173",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
