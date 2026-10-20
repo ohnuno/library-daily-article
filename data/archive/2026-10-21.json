@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-21",
+  "generated_at": "2026-10-21T04:27:24+09:00",
+  "flow": "primary",
+  "event": {
+    "year": "1965",
+    "text": "朝永振一郎にノーベル物理学賞が贈られることが決定する。"
+  },
+  "today_topic": {
+    "text": "1965年 - 朝永振一郎にノーベル物理学賞が贈られることが決定する。",
+    "keywords_ja": [
+      "朝永振一郎にノーベル物理学賞が贈られることが決定する"
+    ],
+    "keywords_en": [
+      "朝永振一郎"
+    ]
+  },
+  "paper": {
+    "title": "Kindai Nihon No Kakushinron to Ajia Shugi: Kita Ikki, Ōkawa Shūmei, Mitsukawa Kametarō ra no Shisō to Kōdō 近代日本の 革新論とアジア主義: 北一輝，大川周明，満川亀太郎らの思想と行動.",
+    "author": "Minohara, T.",
+    "authors": [
+      "Minohara, T."
+    ],
+    "connection": "",
+    "journal": "Pacific Affairs",
+    "issn": "0030-851X",
+    "year": 2016,
+    "doi": "10.1080/17153379.2016.12557559",
+    "doi_url": "https://doi.org/10.1080/17153379.2016.12557559",
+    "abstract_original": "",
+    "abstract_ja": "",
+    "db_id": "taylor-francis-ssh"
+  },
+  "database": {
+    "id": "taylor-francis-ssh",
+    "name": "Taylor & Francis SSH Library",
+    "description": "社会科学・人文科学分野の1,400誌以上を収録するジャーナルパッケージ。1997年以降のバックファイルにアクセス可能。",
+    "url": "https://www.tandfonline.com/",
+    "access_note": "大学ネットワークまたはVPN接続が必要",
+    "ip_restricted": true
+  }
+}

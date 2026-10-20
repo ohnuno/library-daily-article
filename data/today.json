@@ -1,35 +1,32 @@
 {
-  "date": "2026-10-20",
-  "generated_at": "2026-10-20T05:39:38+09:00",
+  "date": "2026-10-21",
+  "generated_at": "2026-10-21T04:27:24+09:00",
   "flow": "primary",
   "event": {
-    "year": "1993",
-    "text": "新右翼「風の会」代表の野村秋介が朝日新聞東京本社に乱入、社長室で拳銃自殺。"
+    "year": "1965",
+    "text": "朝永振一郎にノーベル物理学賞が贈られることが決定する。"
   },
   "today_topic": {
-    "text": "1993年 - 新右翼「風の会」代表の野村秋介が朝日新聞東京本社に乱入、社長室で拳銃自殺。",
+    "text": "1965年 - 朝永振一郎にノーベル物理学賞が贈られることが決定する。",
     "keywords_ja": [
-      "新右翼",
-      "風の会",
-      "代表の野村秋介が朝日新聞東京本社に乱入",
-      "社長室で拳銃自殺"
+      "朝永振一郎にノーベル物理学賞が贈られることが決定する"
     ],
     "keywords_en": [
-      "新右翼"
+      "朝永振一郎"
     ]
   },
   "paper": {
-    "title": "Fanghai zhi dao: Mingdai zhili fanghai yanjiu",
-    "author": "Guang, M.",
+    "title": "Kindai Nihon No Kakushinron to Ajia Shugi: Kita Ikki, Ōkawa Shūmei, Mitsukawa Kametarō ra no Shisō to Kōdō 近代日本の 革新論とアジア主義: 北一輝，大川周明，満川亀太郎らの思想と行動.",
+    "author": "Minohara, T.",
     "authors": [
-      "Guang, M."
+      "Minohara, T."
     ],
     "connection": "",
-    "journal": "Chinese Studies in History",
-    "issn": "0009-4633",
-    "year": 2025,
-    "doi": "10.1080/00094633.2025.2497173",
-    "doi_url": "https://doi.org/10.1080/00094633.2025.2497173",
+    "journal": "Pacific Affairs",
+    "issn": "0030-851X",
+    "year": 2016,
+    "doi": "10.1080/17153379.2016.12557559",
+    "doi_url": "https://doi.org/10.1080/17153379.2016.12557559",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
