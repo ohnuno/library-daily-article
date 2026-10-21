@@ -1,32 +1,36 @@
 {
-  "date": "2026-10-21",
-  "generated_at": "2026-10-21T04:27:24+09:00",
+  "date": "2026-10-22",
+  "generated_at": "2026-10-22T04:26:46+09:00",
   "flow": "primary",
   "event": {
-    "year": "1965",
-    "text": "朝永振一郎にノーベル物理学賞が贈られることが決定する。"
+    "year": "2023",
+    "text": "F1アメリカグランプリにて角田裕毅が2012年中国グランプリの小林可夢偉以来、日本人3人目のファステストラップを記録した。"
   },
   "today_topic": {
-    "text": "1965年 - 朝永振一郎にノーベル物理学賞が贈られることが決定する。",
+    "text": "2023年 - F1アメリカグランプリにて角田裕毅が2012年中国グランプリの小林可夢偉以来、日本人3人目のファステストラップを記録した。",
     "keywords_ja": [
-      "朝永振一郎にノーベル物理学賞が贈られることが決定する"
+      "アメリカグランプリにて角田裕毅が",
+      "年中国グランプリの小林可夢偉以来",
+      "日本人",
+      "人目のファステストラップを記録した"
     ],
     "keywords_en": [
-      "朝永振一郎"
+      "F1アメリカグランプリ"
     ]
   },
   "paper": {
-    "title": "Kindai Nihon No Kakushinron to Ajia Shugi: Kita Ikki, Ōkawa Shūmei, Mitsukawa Kametarō ra no Shisō to Kōdō 近代日本の 革新論とアジア主義: 北一輝，大川周明，満川亀太郎らの思想と行動.",
-    "author": "Minohara, T.",
+    "title": "Race to the podium: separating and conjoining the car and driver in F1 racing",
+    "author": "Rockerbie, D. ほか",
     "authors": [
-      "Minohara, T."
+      "Rockerbie, D.",
+      "Easton, S."
     ],
     "connection": "",
-    "journal": "Pacific Affairs",
-    "issn": "0030-851X",
-    "year": 2016,
-    "doi": "10.1080/17153379.2016.12557559",
-    "doi_url": "https://doi.org/10.1080/17153379.2016.12557559",
+    "journal": "Applied Economics",
+    "issn": "0003-6846",
+    "year": 2022,
+    "doi": "10.1080/00036846.2022.2083068",
+    "doi_url": "https://doi.org/10.1080/00036846.2022.2083068",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"

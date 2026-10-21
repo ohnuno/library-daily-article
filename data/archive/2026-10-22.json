@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-22",
+  "generated_at": "2026-10-22T04:26:46+09:00",
+  "flow": "primary",
+  "event": {
+    "year": "2023",
+    "text": "F1アメリカグランプリにて角田裕毅が2012年中国グランプリの小林可夢偉以来、日本人3人目のファステストラップを記録した。"
+  },
+  "today_topic": {
+    "text": "2023年 - F1アメリカグランプリにて角田裕毅が2012年中国グランプリの小林可夢偉以来、日本人3人目のファステストラップを記録した。",
+    "keywords_ja": [
+      "アメリカグランプリにて角田裕毅が",
+      "年中国グランプリの小林可夢偉以来",
+      "日本人",
+      "人目のファステストラップを記録した"
+    ],
+    "keywords_en": [
+      "F1アメリカグランプリ"
+    ]
+  },
+  "paper": {
+    "title": "Race to the podium: separating and conjoining the car and driver in F1 racing",
+    "author": "Rockerbie, D. ほか",
+    "authors": [
+      "Rockerbie, D.",
+      "Easton, S."
+    ],
+    "connection": "",
+    "journal": "Applied Economics",
+    "issn": "0003-6846",
+    "year": 2022,
+    "doi": "10.1080/00036846.2022.2083068",
+    "doi_url": "https://doi.org/10.1080/00036846.2022.2083068",
+    "abstract_original": "",
+    "abstract_ja": "",
+    "db_id": "taylor-francis-ssh"
+  },
+  "database": {
+    "id": "taylor-francis-ssh",
+    "name": "Taylor & Francis SSH Library",
+    "description": "社会科学・人文科学分野の1,400誌以上を収録するジャーナルパッケージ。1997年以降のバックファイルにアクセス可能。",
+    "url": "https://www.tandfonline.com/",
+    "access_note": "大学ネットワークまたはVPN接続が必要",
+    "ip_restricted": true
+  }
+}
