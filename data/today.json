@@ -1,36 +1,33 @@
 {
-  "date": "2026-10-22",
-  "generated_at": "2026-10-22T04:26:46+09:00",
+  "date": "2026-10-23",
+  "generated_at": "2026-10-23T04:19:54+09:00",
   "flow": "primary",
   "event": {
-    "year": "2023",
-    "text": "F1アメリカグランプリにて角田裕毅が2012年中国グランプリの小林可夢偉以来、日本人3人目のファステストラップを記録した。"
+    "year": "1989",
+    "text": "ハンガリー暫定大統領が、国号をハンガリー人民共和国からハンガリー共和国に変更することを宣言。"
   },
   "today_topic": {
-    "text": "2023年 - F1アメリカグランプリにて角田裕毅が2012年中国グランプリの小林可夢偉以来、日本人3人目のファステストラップを記録した。",
+    "text": "1989年 - ハンガリー暫定大統領が、国号をハンガリー人民共和国からハンガリー共和国に変更することを宣言。",
     "keywords_ja": [
-      "アメリカグランプリにて角田裕毅が",
-      "年中国グランプリの小林可夢偉以来",
-      "日本人",
-      "人目のファステストラップを記録した"
+      "ハンガリー暫定大統領が",
+      "国号をハンガリー人民共和国からハンガリー共和国に変更することを宣言"
     ],
     "keywords_en": [
-      "F1アメリカグランプリ"
+      "ハンガリー暫定大統領"
     ]
   },
   "paper": {
-    "title": "Race to the podium: separating and conjoining the car and driver in F1 racing",
-    "author": "Rockerbie, D. ほか",
+    "title": "Sun Ming 孫 明, Zhidao zhi tong: chuantong Zhongguo zhengzhi sixiang de yuanxing yu dingxing 治道之統: 傳統中國政治思想的原型與定型 (The Genealogy of Zhidao : The Prototype and Conventionalization of Traditional Chinese Political Thought)",
+    "author": "Fan, Z.",
     "authors": [
-      "Rockerbie, D.",
-      "Easton, S."
+      "Fan, Z."
     ],
     "connection": "",
-    "journal": "Applied Economics",
-    "issn": "0003-6846",
-    "year": 2022,
-    "doi": "10.1080/00036846.2022.2083068",
-    "doi_url": "https://doi.org/10.1080/00036846.2022.2083068",
+    "journal": "Chinese Studies in History",
+    "issn": "0009-4633",
+    "year": 2024,
+    "doi": "10.1080/00094633.2024.2439756",
+    "doi_url": "https://doi.org/10.1080/00094633.2024.2439756",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
