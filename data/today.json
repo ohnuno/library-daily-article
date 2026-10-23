@@ -1,33 +1,32 @@
 {
-  "date": "2026-10-23",
-  "generated_at": "2026-10-23T04:19:54+09:00",
+  "date": "2026-10-24",
+  "generated_at": "2026-10-24T04:25:17+09:00",
   "flow": "primary",
   "event": {
-    "year": "1989",
-    "text": "ハンガリー暫定大統領が、国号をハンガリー人民共和国からハンガリー共和国に変更することを宣言。"
+    "year": "1997",
+    "text": "ドイツとフランスを結ぶザールバーンが開業。"
   },
   "today_topic": {
-    "text": "1989年 - ハンガリー暫定大統領が、国号をハンガリー人民共和国からハンガリー共和国に変更することを宣言。",
+    "text": "1997年 - ドイツとフランスを結ぶザールバーンが開業。",
     "keywords_ja": [
-      "ハンガリー暫定大統領が",
-      "国号をハンガリー人民共和国からハンガリー共和国に変更することを宣言"
+      "ドイツとフランスを結ぶザールバーンが開業"
     ],
     "keywords_en": [
-      "ハンガリー暫定大統領"
+      "ドイツとフランス"
     ]
   },
   "paper": {
-    "title": "Sun Ming 孫 明, Zhidao zhi tong: chuantong Zhongguo zhengzhi sixiang de yuanxing yu dingxing 治道之統: 傳統中國政治思想的原型與定型 (The Genealogy of Zhidao : The Prototype and Conventionalization of Traditional Chinese Political Thought)",
-    "author": "Fan, Z.",
+    "title": "Mindai towa nanika: Kiki no Sekaishi to Higashi Ajia",
+    "author": "Minzhi, Y.",
     "authors": [
-      "Fan, Z."
+      "Minzhi, Y."
     ],
     "connection": "",
     "journal": "Chinese Studies in History",
     "issn": "0009-4633",
-    "year": 2024,
-    "doi": "10.1080/00094633.2024.2439756",
-    "doi_url": "https://doi.org/10.1080/00094633.2024.2439756",
+    "year": 2025,
+    "doi": "10.1080/00094633.2025.2504800",
+    "doi_url": "https://doi.org/10.1080/00094633.2025.2504800",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"

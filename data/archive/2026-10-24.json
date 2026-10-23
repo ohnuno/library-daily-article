@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-24",
+  "generated_at": "2026-10-24T04:25:17+09:00",
+  "flow": "primary",
+  "event": {
+    "year": "1997",
+    "text": "ドイツとフランスを結ぶザールバーンが開業。"
+  },
+  "today_topic": {
+    "text": "1997年 - ドイツとフランスを結ぶザールバーンが開業。",
+    "keywords_ja": [
+      "ドイツとフランスを結ぶザールバーンが開業"
+    ],
+    "keywords_en": [
+      "ドイツとフランス"
+    ]
+  },
+  "paper": {
+    "title": "Mindai towa nanika: Kiki no Sekaishi to Higashi Ajia",
+    "author": "Minzhi, Y.",
+    "authors": [
+      "Minzhi, Y."
+    ],
+    "connection": "",
+    "journal": "Chinese Studies in History",
+    "issn": "0009-4633",
+    "year": 2025,
+    "doi": "10.1080/00094633.2025.2504800",
+    "doi_url": "https://doi.org/10.1080/00094633.2025.2504800",
+    "abstract_original": "",
+    "abstract_ja": "",
+    "db_id": "taylor-francis-ssh"
+  },
+  "database": {
+    "id": "taylor-francis-ssh",
+    "name": "Taylor & Francis SSH Library",
+    "description": "社会科学・人文科学分野の1,400誌以上を収録するジャーナルパッケージ。1997年以降のバックファイルにアクセス可能。",
+    "url": "https://www.tandfonline.com/",
+    "access_note": "大学ネットワークまたはVPN接続が必要",
+    "ip_restricted": true
+  }
+}
