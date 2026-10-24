@@ -1,32 +1,33 @@
 {
-  "date": "2026-10-24",
-  "generated_at": "2026-10-24T04:25:17+09:00",
+  "date": "2026-10-25",
+  "generated_at": "2026-10-25T03:16:53+09:00",
   "flow": "primary",
   "event": {
-    "year": "1997",
-    "text": "ドイツとフランスを結ぶザールバーンが開業。"
+    "year": "1760",
+    "text": "ジョージ3世がグレートブリテン王に即位。"
   },
   "today_topic": {
-    "text": "1997年 - ドイツとフランスを結ぶザールバーンが開業。",
+    "text": "1760年 - ジョージ3世がグレートブリテン王に即位。",
     "keywords_ja": [
-      "ドイツとフランスを結ぶザールバーンが開業"
+      "ジョージ",
+      "世がグレートブリテン王に即位"
     ],
     "keywords_en": [
-      "ドイツとフランス"
+      "ジョージ3世"
     ]
   },
   "paper": {
-    "title": "Mindai towa nanika: Kiki no Sekaishi to Higashi Ajia",
-    "author": "Minzhi, Y.",
+    "title": "Yujian huangdong: 18-19 shiji zhujiangkou de xiaorenwu yu dashijie 遇見黃東：18-19世紀珠江口的小人物和大世界 (Encountering Whang Tong: Little People and the Big World in the Eighteenth and Nineteenth Century Pearl River Estuary)",
+    "author": "Yushu, C.",
     "authors": [
-      "Minzhi, Y."
+      "Yushu, C."
     ],
     "connection": "",
     "journal": "Chinese Studies in History",
     "issn": "0009-4633",
-    "year": 2025,
-    "doi": "10.1080/00094633.2025.2504800",
-    "doi_url": "https://doi.org/10.1080/00094633.2025.2504800",
+    "year": 2023,
+    "doi": "10.1080/00094633.2023.2198978",
+    "doi_url": "https://doi.org/10.1080/00094633.2023.2198978",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
