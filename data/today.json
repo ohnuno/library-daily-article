@@ -1,33 +1,34 @@
 {
-  "date": "2026-10-25",
-  "generated_at": "2026-10-25T03:16:53+09:00",
+  "date": "2026-10-26",
+  "generated_at": "2026-10-26T03:30:31+09:00",
   "flow": "primary",
   "event": {
-    "year": "1760",
-    "text": "ジョージ3世がグレートブリテン王に即位。"
+    "year": "1905",
+    "text": "同君連合スウェーデン=ノルウェーからのノルウェーの分離独立が承認される。"
   },
   "today_topic": {
-    "text": "1760年 - ジョージ3世がグレートブリテン王に即位。",
+    "text": "1905年 - 同君連合スウェーデン=ノルウェーからのノルウェーの分離独立が承認される。",
     "keywords_ja": [
-      "ジョージ",
-      "世がグレートブリテン王に即位"
+      "同君連合スウェーデン",
+      "ノルウェーからのノルウェーの分離独立が承認される"
     ],
     "keywords_en": [
-      "ジョージ3世"
+      "同君連合スウェーデン=ノルウェ"
     ]
   },
   "paper": {
-    "title": "Yujian huangdong: 18-19 shiji zhujiangkou de xiaorenwu yu dashijie 遇見黃東：18-19世紀珠江口的小人物和大世界 (Encountering Whang Tong: Little People and the Big World in the Eighteenth and Nineteenth Century Pearl River Estuary)",
-    "author": "Yushu, C.",
+    "title": "Confucius’Junzi(君子): The conceptions of self in Confucian",
+    "author": "Song, J. ほか",
     "authors": [
-      "Yushu, C."
+      "Song, J.",
+      "Jiao, X."
     ],
     "connection": "",
-    "journal": "Chinese Studies in History",
-    "issn": "0009-4633",
-    "year": 2023,
-    "doi": "10.1080/00094633.2023.2198978",
-    "doi_url": "https://doi.org/10.1080/00094633.2023.2198978",
+    "journal": "Educational Philosophy and Theory",
+    "issn": "0013-1857",
+    "year": 2017,
+    "doi": "10.1080/00131857.2017.1395738",
+    "doi_url": "https://doi.org/10.1080/00131857.2017.1395738",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
