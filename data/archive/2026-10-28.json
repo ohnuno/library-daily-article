@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-28",
+  "generated_at": "2026-10-28T05:09:28+09:00",
+  "flow": "primary",
+  "event": {
+    "year": "1931",
+    "text": "大分県別府温泉（観海寺温泉）で火災。温泉街がほぼ全焼。"
+  },
+  "today_topic": {
+    "text": "1931年 - 大分県別府温泉（観海寺温泉）で火災。温泉街がほぼ全焼。",
+    "keywords_ja": [
+      "大分県別府温泉",
+      "観海寺温泉",
+      "で火災",
+      "温泉街がほぼ全焼"
+    ],
+    "keywords_en": [
+      "大分県別府温泉（観海寺温泉）"
+    ]
+  },
+  "paper": {
+    "title": "Onodera Shirō 小野寺史郎, Sengo Nihon no Chūgokukan: Ajia to Kindai wo Meguru Kattō 戦後日本の中国観:アジアと近代をめぐる葛藤 (China in Postwar Japan: Entanglements around Asia and the Modern Era)",
+    "author": "Siyu, M.",
+    "authors": [
+      "Siyu, M."
+    ],
+    "connection": "",
+    "journal": "Chinese Studies in History",
+    "issn": "0009-4633",
+    "year": 2024,
+    "doi": "10.1080/00094633.2024.2439760",
+    "doi_url": "https://doi.org/10.1080/00094633.2024.2439760",
+    "abstract_original": "",
+    "abstract_ja": "",
+    "db_id": "taylor-francis-ssh"
+  },
+  "database": {
+    "id": "taylor-francis-ssh",
+    "name": "Taylor & Francis SSH Library",
+    "description": "社会科学・人文科学分野の1,400誌以上を収録するジャーナルパッケージ。1997年以降のバックファイルにアクセス可能。",
+    "url": "https://www.tandfonline.com/",
+    "access_note": "大学ネットワークまたはVPN接続が必要",
+    "ip_restricted": true
+  }
+}
