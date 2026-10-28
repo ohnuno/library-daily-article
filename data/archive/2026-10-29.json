@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-29",
+  "generated_at": "2026-10-29T05:26:30+09:00",
+  "flow": "primary",
+  "event": {
+    "year": "2015",
+    "text": "中国共産党第十八期中央委員会第五回全体会議において一人っ子政策の完全廃止を決定する。"
+  },
+  "today_topic": {
+    "text": "2015年 - 中国共産党第十八期中央委員会第五回全体会議において一人っ子政策の完全廃止を決定する。",
+    "keywords_ja": [
+      "中国共産党第十八期中央委員会第五回全体会議において一人っ子政策の完全廃止を決定する"
+    ],
+    "keywords_en": [
+      "中国共産党第十八期中央委員会第"
+    ]
+  },
+  "paper": {
+    "title": "China’s Pathway towards Maritime Civilisation",
+    "author": "Zou, X.",
+    "authors": [
+      "Zou, X."
+    ],
+    "connection": "",
+    "journal": "Journal of Contemporary Asia",
+    "issn": "0047-2336",
+    "year": 2019,
+    "doi": "10.1080/00472336.2019.1600712",
+    "doi_url": "https://doi.org/10.1080/00472336.2019.1600712",
+    "abstract_original": "",
+    "abstract_ja": "",
+    "db_id": "taylor-francis-ssh"
+  },
+  "database": {
+    "id": "taylor-francis-ssh",
+    "name": "Taylor & Francis SSH Library",
+    "description": "社会科学・人文科学分野の1,400誌以上を収録するジャーナルパッケージ。1997年以降のバックファイルにアクセス可能。",
+    "url": "https://www.tandfonline.com/",
+    "access_note": "大学ネットワークまたはVPN接続が必要",
+    "ip_restricted": true
+  }
+}

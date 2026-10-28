@@ -1,35 +1,32 @@
 {
-  "date": "2026-10-28",
-  "generated_at": "2026-10-28T05:09:28+09:00",
+  "date": "2026-10-29",
+  "generated_at": "2026-10-29T05:26:30+09:00",
   "flow": "primary",
   "event": {
-    "year": "1931",
-    "text": "大分県別府温泉（観海寺温泉）で火災。温泉街がほぼ全焼。"
+    "year": "2015",
+    "text": "中国共産党第十八期中央委員会第五回全体会議において一人っ子政策の完全廃止を決定する。"
   },
   "today_topic": {
-    "text": "1931年 - 大分県別府温泉（観海寺温泉）で火災。温泉街がほぼ全焼。",
+    "text": "2015年 - 中国共産党第十八期中央委員会第五回全体会議において一人っ子政策の完全廃止を決定する。",
     "keywords_ja": [
-      "大分県別府温泉",
-      "観海寺温泉",
-      "で火災",
-      "温泉街がほぼ全焼"
+      "中国共産党第十八期中央委員会第五回全体会議において一人っ子政策の完全廃止を決定する"
     ],
     "keywords_en": [
-      "大分県別府温泉（観海寺温泉）"
+      "中国共産党第十八期中央委員会第"
     ]
   },
   "paper": {
-    "title": "Onodera Shirō 小野寺史郎, Sengo Nihon no Chūgokukan: Ajia to Kindai wo Meguru Kattō 戦後日本の中国観:アジアと近代をめぐる葛藤 (China in Postwar Japan: Entanglements around Asia and the Modern Era)",
-    "author": "Siyu, M.",
+    "title": "China’s Pathway towards Maritime Civilisation",
+    "author": "Zou, X.",
     "authors": [
-      "Siyu, M."
+      "Zou, X."
     ],
     "connection": "",
-    "journal": "Chinese Studies in History",
-    "issn": "0009-4633",
-    "year": 2024,
-    "doi": "10.1080/00094633.2024.2439760",
-    "doi_url": "https://doi.org/10.1080/00094633.2024.2439760",
+    "journal": "Journal of Contemporary Asia",
+    "issn": "0047-2336",
+    "year": 2019,
+    "doi": "10.1080/00472336.2019.1600712",
+    "doi_url": "https://doi.org/10.1080/00472336.2019.1600712",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
