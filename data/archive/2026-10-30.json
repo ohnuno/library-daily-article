@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-30",
+  "generated_at": "2026-10-30T05:25:19+09:00",
+  "flow": "primary",
+  "event": {
+    "year": "1961",
+    "text": "ソ連がノヴァヤゼムリャ上空で、史上最大の水爆実験（ツァーリ・ボンバ）を実施。"
+  },
+  "today_topic": {
+    "text": "1961年 - ソ連がノヴァヤゼムリャ上空で、史上最大の水爆実験（ツァーリ・ボンバ）を実施。",
+    "keywords_ja": [
+      "ソ連がノヴァヤゼムリャ上空で",
+      "史上最大の水爆実験",
+      "ツァーリ・ボンバ",
+      "を実施"
+    ],
+    "keywords_en": [
+      "ソ連がノヴァヤゼムリャ上空"
+    ]
+  },
+  "paper": {
+    "title": "上古中國的神: 先秦時期的彼岸世界 ( Gods in Ancient China: The Otherworld in the Pre-Qin Period )",
+    "author": "Baojun, P.",
+    "authors": [
+      "Baojun, P."
+    ],
+    "connection": "",
+    "journal": "Chinese Studies in History",
+    "issn": "0009-4633",
+    "year": 2026,
+    "doi": "10.1080/00094633.2026.2627313",
+    "doi_url": "https://doi.org/10.1080/00094633.2026.2627313",
+    "abstract_original": "",
+    "abstract_ja": "",
+    "db_id": "taylor-francis-ssh"
+  },
+  "database": {
+    "id": "taylor-francis-ssh",
+    "name": "Taylor & Francis SSH Library",
+    "description": "社会科学・人文科学分野の1,400誌以上を収録するジャーナルパッケージ。1997年以降のバックファイルにアクセス可能。",
+    "url": "https://www.tandfonline.com/",
+    "access_note": "大学ネットワークまたはVPN接続が必要",
+    "ip_restricted": true
+  }
+}
