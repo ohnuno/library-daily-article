@@ -1,36 +1,36 @@
 {
-  "date": "2026-10-31",
-  "generated_at": "2026-10-31T04:58:46+09:00",
+  "date": "2026-11-01",
+  "generated_at": "2026-11-01T04:25:46+09:00",
   "flow": "primary",
   "event": {
-    "year": "1941",
-    "text": "第二次世界大戦: アメリカ海軍の駆逐艦「ルーベン・ジェームズ」がドイツのUボートの雷撃を受け沈没。115人死亡。"
+    "year": "1942",
+    "text": "日本工業新聞など西日本（愛知県以西）の産業経済紙数社が合同して産業経済新聞（現・産経新聞）が発刊。"
   },
   "today_topic": {
-    "text": "1941年 - 第二次世界大戦: アメリカ海軍の駆逐艦「ルーベン・ジェームズ」がドイツのUボートの雷撃を受け沈没。115人死亡。",
+    "text": "1942年 - 日本工業新聞など西日本（愛知県以西）の産業経済紙数社が合同して産業経済新聞（現・産経新聞）が発刊。",
     "keywords_ja": [
-      "第二次世界大戦",
-      "アメリカ海軍の駆逐艦",
-      "ルーベン・ジェームズ",
-      "がドイツの",
-      "ボートの雷撃を受け沈没"
+      "日本工業新聞など西日本",
+      "愛知県以西",
+      "の産業経済紙数社が合同して産業経済新聞",
+      "現・産経新聞",
+      "が発刊"
     ],
     "keywords_en": [
-      "第二次世界大戦:"
+      "日本工業新聞など西日本（愛知県"
     ]
   },
   "paper": {
-    "title": "Yujian huangdong: 18-19 shiji zhujiangkou de xiaorenwu yu dashijie 遇見黃東：18-19世紀珠江口的小人物和大世界 (Encountering Whang Tong: Little People and the Big World in the Eighteenth and Nineteenth Century Pearl River Estuary)",
-    "author": "Yushu, C.",
+    "title": "Stiegler on youth: Florian, Greta, Parrhesia",
+    "author": "Bradley, J.",
     "authors": [
-      "Yushu, C."
+      "Bradley, J."
     ],
     "connection": "",
-    "journal": "Chinese Studies in History",
-    "issn": "0009-4633",
-    "year": 2023,
-    "doi": "10.1080/00094633.2023.2198978",
-    "doi_url": "https://doi.org/10.1080/00094633.2023.2198978",
+    "journal": "Educational Philosophy and Theory",
+    "issn": "0013-1857",
+    "year": 2026,
+    "doi": "10.1080/00131857.2026.2726403",
+    "doi_url": "https://doi.org/10.1080/00131857.2026.2726403",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"

@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-01",
+  "generated_at": "2026-11-01T04:25:46+09:00",
+  "flow": "primary",
+  "event": {
+    "year": "1942",
+    "text": "日本工業新聞など西日本（愛知県以西）の産業経済紙数社が合同して産業経済新聞（現・産経新聞）が発刊。"
+  },
+  "today_topic": {
+    "text": "1942年 - 日本工業新聞など西日本（愛知県以西）の産業経済紙数社が合同して産業経済新聞（現・産経新聞）が発刊。",
+    "keywords_ja": [
+      "日本工業新聞など西日本",
+      "愛知県以西",
+      "の産業経済紙数社が合同して産業経済新聞",
+      "現・産経新聞",
+      "が発刊"
+    ],
+    "keywords_en": [
+      "日本工業新聞など西日本（愛知県"
+    ]
+  },
+  "paper": {
+    "title": "Stiegler on youth: Florian, Greta, Parrhesia",
+    "author": "Bradley, J.",
+    "authors": [
+      "Bradley, J."
+    ],
+    "connection": "",
+    "journal": "Educational Philosophy and Theory",
+    "issn": "0013-1857",
+    "year": 2026,
+    "doi": "10.1080/00131857.2026.2726403",
+    "doi_url": "https://doi.org/10.1080/00131857.2026.2726403",
+    "abstract_original": "",
+    "abstract_ja": "",
+    "db_id": "taylor-francis-ssh"
+  },
+  "database": {
+    "id": "taylor-francis-ssh",
+    "name": "Taylor & Francis SSH Library",
+    "description": "社会科学・人文科学分野の1,400誌以上を収録するジャーナルパッケージ。1997年以降のバックファイルにアクセス可能。",
+    "url": "https://www.tandfonline.com/",
+    "access_note": "大学ネットワークまたはVPN接続が必要",
+    "ip_restricted": true
+  }
+}
