@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-02",
+  "generated_at": "2026-11-02T04:50:39+09:00",
+  "flow": "primary",
+  "event": {
+    "year": "1795",
+    "text": "フランス革命: 総裁政府が発足。"
+  },
+  "today_topic": {
+    "text": "1795年 - フランス革命: 総裁政府が発足。",
+    "keywords_ja": [
+      "フランス革命",
+      "総裁政府が発足"
+    ],
+    "keywords_en": [
+      "フランス革命:"
+    ]
+  },
+  "paper": {
+    "title": "Li Jinzheng 李金錚, Chongfang geming: Zhonggong “xin gemingshi” de zhuanxiang 重訪革命: 中共“新革命史”的轉向, 1921–1949 (Revisit the Revolution: The Turn to A New Chinese Communist Revolutionary History, 1921–1949).Li Jinzheng 李金錚, Chongfang geming: Zhonggong “xin gemingshi” de zhuanxiang 重訪革命: 中共“新革命史”的轉向, 1921–1949 (Revisit the Revolution: The Turn to a New Chinese Communist Revolutionary History, 1921–1949). Hong Kong: Hong Kong Kaiming Book Store, 2021. 392 pp. HKD 158. ISBN 978-962-459-069-2.",
+    "author": "Feng, M.",
+    "authors": [
+      "Feng, M."
+    ],
+    "connection": "",
+    "journal": "Chinese Studies in History",
+    "issn": "0009-4633",
+    "year": 2023,
+    "doi": "10.1080/00094633.2023.2289809",
+    "doi_url": "https://doi.org/10.1080/00094633.2023.2289809",
+    "abstract_original": "",
+    "abstract_ja": "",
+    "db_id": "taylor-francis-ssh"
+  },
+  "database": {
+    "id": "taylor-francis-ssh",
+    "name": "Taylor & Francis SSH Library",
+    "description": "社会科学・人文科学分野の1,400誌以上を収録するジャーナルパッケージ。1997年以降のバックファイルにアクセス可能。",
+    "url": "https://www.tandfonline.com/",
+    "access_note": "大学ネットワークまたはVPN接続が必要",
+    "ip_restricted": true
+  }
+}
