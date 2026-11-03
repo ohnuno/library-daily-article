@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-04",
+  "generated_at": "2026-11-04T06:10:24+09:00",
+  "flow": "primary",
+  "event": {
+    "year": "1993",
+    "text": "中華航空605便オーバーラン事故。"
+  },
+  "today_topic": {
+    "text": "1993年 - 中華航空605便オーバーラン事故。",
+    "keywords_ja": [
+      "中華航空",
+      "便オーバーラン事故"
+    ],
+    "keywords_en": [
+      "中華航空605便オーバーラン事"
+    ]
+  },
+  "paper": {
+    "title": "Huang Xingtao 黃興濤, Chongsu Zhonghua: jindai Zhongguo “Zhonghua minzu” guannian yanjiu 重塑中華：近代中國“中華民族”觀念研究 (Reshaping China: A Study of the Concept of the “Chinese Nation” in Modern China)",
+    "author": "Chang, M.",
+    "authors": [
+      "Chang, M."
+    ],
+    "connection": "",
+    "journal": "Chinese Studies in History",
+    "issn": "0009-4633",
+    "year": 2022,
+    "doi": "10.1080/00094633.2022.2135338",
+    "doi_url": "https://doi.org/10.1080/00094633.2022.2135338",
+    "abstract_original": "",
+    "abstract_ja": "",
+    "db_id": "taylor-francis-ssh"
+  },
+  "database": {
+    "id": "taylor-francis-ssh",
+    "name": "Taylor & Francis SSH Library",
+    "description": "社会科学・人文科学分野の1,400誌以上を収録するジャーナルパッケージ。1997年以降のバックファイルにアクセス可能。",
+    "url": "https://www.tandfonline.com/",
+    "access_note": "大学ネットワークまたはVPN接続が必要",
+    "ip_restricted": true
+  }
+}

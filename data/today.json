@@ -1,33 +1,33 @@
 {
-  "date": "2026-11-02",
-  "generated_at": "2026-11-02T04:50:39+09:00",
+  "date": "2026-11-04",
+  "generated_at": "2026-11-04T06:10:24+09:00",
   "flow": "primary",
   "event": {
-    "year": "1795",
-    "text": "フランス革命: 総裁政府が発足。"
+    "year": "1993",
+    "text": "中華航空605便オーバーラン事故。"
   },
   "today_topic": {
-    "text": "1795年 - フランス革命: 総裁政府が発足。",
+    "text": "1993年 - 中華航空605便オーバーラン事故。",
     "keywords_ja": [
-      "フランス革命",
-      "総裁政府が発足"
+      "中華航空",
+      "便オーバーラン事故"
     ],
     "keywords_en": [
-      "フランス革命:"
+      "中華航空605便オーバーラン事"
     ]
   },
   "paper": {
-    "title": "Li Jinzheng 李金錚, Chongfang geming: Zhonggong “xin gemingshi” de zhuanxiang 重訪革命: 中共“新革命史”的轉向, 1921–1949 (Revisit the Revolution: The Turn to A New Chinese Communist Revolutionary History, 1921–1949).Li Jinzheng 李金錚, Chongfang geming: Zhonggong “xin gemingshi” de zhuanxiang 重訪革命: 中共“新革命史”的轉向, 1921–1949 (Revisit the Revolution: The Turn to a New Chinese Communist Revolutionary History, 1921–1949). Hong Kong: Hong Kong Kaiming Book Store, 2021. 392 pp. HKD 158. ISBN 978-962-459-069-2.",
-    "author": "Feng, M.",
+    "title": "Huang Xingtao 黃興濤, Chongsu Zhonghua: jindai Zhongguo “Zhonghua minzu” guannian yanjiu 重塑中華：近代中國“中華民族”觀念研究 (Reshaping China: A Study of the Concept of the “Chinese Nation” in Modern China)",
+    "author": "Chang, M.",
     "authors": [
-      "Feng, M."
+      "Chang, M."
     ],
     "connection": "",
     "journal": "Chinese Studies in History",
     "issn": "0009-4633",
-    "year": 2023,
-    "doi": "10.1080/00094633.2023.2289809",
-    "doi_url": "https://doi.org/10.1080/00094633.2023.2289809",
+    "year": 2022,
+    "doi": "10.1080/00094633.2022.2135338",
+    "doi_url": "https://doi.org/10.1080/00094633.2022.2135338",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
