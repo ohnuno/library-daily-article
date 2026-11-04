@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-05",
+  "generated_at": "2026-11-05T06:23:09+09:00",
+  "flow": "primary",
+  "event": {
+    "year": "1889",
+    "text": "パリの自由の女神像の除幕式が行われる。"
+  },
+  "today_topic": {
+    "text": "1889年 - パリの自由の女神像の除幕式が行われる。",
+    "keywords_ja": [
+      "パリの自由の女神像の除幕式が行われる"
+    ],
+    "keywords_en": [
+      "パリの自由の女神像の除幕式が行"
+    ]
+  },
+  "paper": {
+    "title": "ニューカレドニア カナク・アイデンティティの語り —ネーションの語り・共同体の語り・文化の語り",
+    "author": "Osumi, M.",
+    "authors": [
+      "Osumi, M."
+    ],
+    "connection": "",
+    "journal": "The Journal of Pacific History",
+    "issn": "0022-3344",
+    "year": 2016,
+    "doi": "10.1080/00223344.2016.1241172",
+    "doi_url": "https://doi.org/10.1080/00223344.2016.1241172",
+    "abstract_original": "",
+    "abstract_ja": "",
+    "db_id": "taylor-francis-ssh"
+  },
+  "database": {
+    "id": "taylor-francis-ssh",
+    "name": "Taylor & Francis SSH Library",
+    "description": "社会科学・人文科学分野の1,400誌以上を収録するジャーナルパッケージ。1997年以降のバックファイルにアクセス可能。",
+    "url": "https://www.tandfonline.com/",
+    "access_note": "大学ネットワークまたはVPN接続が必要",
+    "ip_restricted": true
+  }
+}

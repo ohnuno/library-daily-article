@@ -1,33 +1,32 @@
 {
-  "date": "2026-11-04",
-  "generated_at": "2026-11-04T06:10:24+09:00",
+  "date": "2026-11-05",
+  "generated_at": "2026-11-05T06:23:09+09:00",
   "flow": "primary",
   "event": {
-    "year": "1993",
-    "text": "中華航空605便オーバーラン事故。"
+    "year": "1889",
+    "text": "パリの自由の女神像の除幕式が行われる。"
   },
   "today_topic": {
-    "text": "1993年 - 中華航空605便オーバーラン事故。",
+    "text": "1889年 - パリの自由の女神像の除幕式が行われる。",
     "keywords_ja": [
-      "中華航空",
-      "便オーバーラン事故"
+      "パリの自由の女神像の除幕式が行われる"
     ],
     "keywords_en": [
-      "中華航空605便オーバーラン事"
+      "パリの自由の女神像の除幕式が行"
     ]
   },
   "paper": {
-    "title": "Huang Xingtao 黃興濤, Chongsu Zhonghua: jindai Zhongguo “Zhonghua minzu” guannian yanjiu 重塑中華：近代中國“中華民族”觀念研究 (Reshaping China: A Study of the Concept of the “Chinese Nation” in Modern China)",
-    "author": "Chang, M.",
+    "title": "ニューカレドニア カナク・アイデンティティの語り —ネーションの語り・共同体の語り・文化の語り",
+    "author": "Osumi, M.",
     "authors": [
-      "Chang, M."
+      "Osumi, M."
     ],
     "connection": "",
-    "journal": "Chinese Studies in History",
-    "issn": "0009-4633",
-    "year": 2022,
-    "doi": "10.1080/00094633.2022.2135338",
-    "doi_url": "https://doi.org/10.1080/00094633.2022.2135338",
+    "journal": "The Journal of Pacific History",
+    "issn": "0022-3344",
+    "year": 2016,
+    "doi": "10.1080/00223344.2016.1241172",
+    "doi_url": "https://doi.org/10.1080/00223344.2016.1241172",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
