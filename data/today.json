@@ -1,32 +1,33 @@
 {
-  "date": "2026-11-05",
-  "generated_at": "2026-11-05T06:23:09+09:00",
+  "date": "2026-11-07",
+  "generated_at": "2026-11-07T05:58:20+09:00",
   "flow": "primary",
   "event": {
-    "year": "1889",
-    "text": "パリの自由の女神像の除幕式が行われる。"
+    "year": "1929",
+    "text": "ニューヨーク近代美術館（MoMA）が開館。"
   },
   "today_topic": {
-    "text": "1889年 - パリの自由の女神像の除幕式が行われる。",
+    "text": "1929年 - ニューヨーク近代美術館（MoMA）が開館。",
     "keywords_ja": [
-      "パリの自由の女神像の除幕式が行われる"
+      "ニューヨーク近代美術館",
+      "が開館"
     ],
     "keywords_en": [
-      "パリの自由の女神像の除幕式が行"
+      "ニューヨーク近代美術館（MoM"
     ]
   },
   "paper": {
-    "title": "ニューカレドニア カナク・アイデンティティの語り —ネーションの語り・共同体の語り・文化の語り",
-    "author": "Osumi, M.",
+    "title": "Qingdai weisheng fangyi jizhi jiqi jindai yanbian 清代衛生防疫機制及其近代演變 (修訂版) (The Public Health and Epidemic Prevention Mechanisms in Qing Dynasty and Their Evolution in Modern China (revised edition))Yu Xinzhong 余新忠, Qingdai weisheng fangyi jizhi jiqi jindai yanbian 清代衛生防疫機制及其近代演變 (修訂版) (The Public Health and Epidemic Prevention Mechanisms in Qing Dynasty and Their Evolution in Modern China (revised edition)). Beijing: Beijing Normal University Press, 2023, 643 pp. Hardcover. RMB: 128. ISBN: 9787303289318.",
+    "author": "Linghui, J.",
     "authors": [
-      "Osumi, M."
+      "Linghui, J."
     ],
     "connection": "",
-    "journal": "The Journal of Pacific History",
-    "issn": "0022-3344",
-    "year": 2016,
-    "doi": "10.1080/00223344.2016.1241172",
-    "doi_url": "https://doi.org/10.1080/00223344.2016.1241172",
+    "journal": "Chinese Studies in History",
+    "issn": "0009-4633",
+    "year": 2024,
+    "doi": "10.1080/00094633.2024.2340937",
+    "doi_url": "https://doi.org/10.1080/00094633.2024.2340937",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"

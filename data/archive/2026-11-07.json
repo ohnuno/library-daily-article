@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-07",
+  "generated_at": "2026-11-07T05:58:20+09:00",
+  "flow": "primary",
+  "event": {
+    "year": "1929",
+    "text": "ニューヨーク近代美術館（MoMA）が開館。"
+  },
+  "today_topic": {
+    "text": "1929年 - ニューヨーク近代美術館（MoMA）が開館。",
+    "keywords_ja": [
+      "ニューヨーク近代美術館",
+      "が開館"
+    ],
+    "keywords_en": [
+      "ニューヨーク近代美術館（MoM"
+    ]
+  },
+  "paper": {
+    "title": "Qingdai weisheng fangyi jizhi jiqi jindai yanbian 清代衛生防疫機制及其近代演變 (修訂版) (The Public Health and Epidemic Prevention Mechanisms in Qing Dynasty and Their Evolution in Modern China (revised edition))Yu Xinzhong 余新忠, Qingdai weisheng fangyi jizhi jiqi jindai yanbian 清代衛生防疫機制及其近代演變 (修訂版) (The Public Health and Epidemic Prevention Mechanisms in Qing Dynasty and Their Evolution in Modern China (revised edition)). Beijing: Beijing Normal University Press, 2023, 643 pp. Hardcover. RMB: 128. ISBN: 9787303289318.",
+    "author": "Linghui, J.",
+    "authors": [
+      "Linghui, J."
+    ],
+    "connection": "",
+    "journal": "Chinese Studies in History",
+    "issn": "0009-4633",
+    "year": 2024,
+    "doi": "10.1080/00094633.2024.2340937",
+    "doi_url": "https://doi.org/10.1080/00094633.2024.2340937",
+    "abstract_original": "",
+    "abstract_ja": "",
+    "db_id": "taylor-francis-ssh"
+  },
+  "database": {
+    "id": "taylor-francis-ssh",
+    "name": "Taylor & Francis SSH Library",
+    "description": "社会科学・人文科学分野の1,400誌以上を収録するジャーナルパッケージ。1997年以降のバックファイルにアクセス可能。",
+    "url": "https://www.tandfonline.com/",
+    "access_note": "大学ネットワークまたはVPN接続が必要",
+    "ip_restricted": true
+  }
+}
