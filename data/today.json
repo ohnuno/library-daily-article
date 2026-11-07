@@ -1,33 +1,33 @@
 {
-  "date": "2026-11-07",
-  "generated_at": "2026-11-07T05:58:20+09:00",
+  "date": "2026-11-08",
+  "generated_at": "2026-11-08T04:30:50+09:00",
   "flow": "primary",
   "event": {
-    "year": "1929",
-    "text": "ニューヨーク近代美術館（MoMA）が開館。"
+    "year": "1932",
+    "text": "1932年アメリカ合衆国大統領選挙が行われ、フランクリン・ルーズベルトが現職のハーバート・フーヴァーを破って初当選。"
   },
   "today_topic": {
-    "text": "1929年 - ニューヨーク近代美術館（MoMA）が開館。",
+    "text": "1932年 - 1932年アメリカ合衆国大統領選挙が行われ、フランクリン・ルーズベルトが現職のハーバート・フーヴァーを破って初当選。",
     "keywords_ja": [
-      "ニューヨーク近代美術館",
-      "が開館"
+      "年アメリカ合衆国大統領選挙が行われ",
+      "フランクリン・ルーズベルトが現職のハーバート・フーヴァーを破って初当選"
     ],
     "keywords_en": [
-      "ニューヨーク近代美術館（MoM"
+      "1932年アメリカ合衆国大統領"
     ]
   },
   "paper": {
-    "title": "Qingdai weisheng fangyi jizhi jiqi jindai yanbian 清代衛生防疫機制及其近代演變 (修訂版) (The Public Health and Epidemic Prevention Mechanisms in Qing Dynasty and Their Evolution in Modern China (revised edition))Yu Xinzhong 余新忠, Qingdai weisheng fangyi jizhi jiqi jindai yanbian 清代衛生防疫機制及其近代演變 (修訂版) (The Public Health and Epidemic Prevention Mechanisms in Qing Dynasty and Their Evolution in Modern China (revised edition)). Beijing: Beijing Normal University Press, 2023, 643 pp. Hardcover. RMB: 128. ISBN: 9787303289318.",
-    "author": "Linghui, J.",
+    "title": "China’s Pathway towards Maritime Civilisation",
+    "author": "Zou, X.",
     "authors": [
-      "Linghui, J."
+      "Zou, X."
     ],
     "connection": "",
-    "journal": "Chinese Studies in History",
-    "issn": "0009-4633",
-    "year": 2024,
-    "doi": "10.1080/00094633.2024.2340937",
-    "doi_url": "https://doi.org/10.1080/00094633.2024.2340937",
+    "journal": "Journal of Contemporary Asia",
+    "issn": "0047-2336",
+    "year": 2019,
+    "doi": "10.1080/00472336.2019.1600712",
+    "doi_url": "https://doi.org/10.1080/00472336.2019.1600712",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
