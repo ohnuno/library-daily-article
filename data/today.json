@@ -1,33 +1,34 @@
 {
-  "date": "2026-11-08",
-  "generated_at": "2026-11-08T04:30:50+09:00",
+  "date": "2026-11-09",
+  "generated_at": "2026-11-09T04:51:14+09:00",
   "flow": "primary",
   "event": {
-    "year": "1932",
-    "text": "1932年アメリカ合衆国大統領選挙が行われ、フランクリン・ルーズベルトが現職のハーバート・フーヴァーを破って初当選。"
+    "year": "1494",
+    "text": "メディチ家がフィレンツェから追放される。"
   },
   "today_topic": {
-    "text": "1932年 - 1932年アメリカ合衆国大統領選挙が行われ、フランクリン・ルーズベルトが現職のハーバート・フーヴァーを破って初当選。",
+    "text": "1494年 - メディチ家がフィレンツェから追放される。",
     "keywords_ja": [
-      "年アメリカ合衆国大統領選挙が行われ",
-      "フランクリン・ルーズベルトが現職のハーバート・フーヴァーを破って初当選"
+      "メディチ家がフィレンツェから追放される"
     ],
     "keywords_en": [
-      "1932年アメリカ合衆国大統領"
+      "メディチ家"
     ]
   },
   "paper": {
-    "title": "China’s Pathway towards Maritime Civilisation",
-    "author": "Zou, X.",
+    "title": "‘来来, 大家一起玩’ (C’mon, let’s play together): grassroots planning from a Bourdieusian perspective",
+    "author": "Curdt-Christiansen, X. ほか",
     "authors": [
-      "Zou, X."
+      "Curdt-Christiansen, X.",
+      "Li, L.",
+      "Chai, S."
     ],
     "connection": "",
-    "journal": "Journal of Contemporary Asia",
-    "issn": "0047-2336",
-    "year": 2019,
-    "doi": "10.1080/00472336.2019.1600712",
-    "doi_url": "https://doi.org/10.1080/00472336.2019.1600712",
+    "journal": "Journal of Multilingual and Multicultural Development",
+    "issn": "0143-4632",
+    "year": 2024,
+    "doi": "10.1080/01434632.2024.2321392",
+    "doi_url": "https://doi.org/10.1080/01434632.2024.2321392",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
