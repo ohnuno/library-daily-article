@@ -1,34 +1,32 @@
 {
-  "date": "2026-11-09",
-  "generated_at": "2026-11-09T04:51:14+09:00",
+  "date": "2026-11-10",
+  "generated_at": "2026-11-10T08:49:11+09:00",
   "flow": "primary",
   "event": {
-    "year": "1494",
-    "text": "メディチ家がフィレンツェから追放される。"
+    "year": "1999",
+    "text": "国会でクエスチョンタイムが初めて行われる。"
   },
   "today_topic": {
-    "text": "1494年 - メディチ家がフィレンツェから追放される。",
+    "text": "1999年 - 国会でクエスチョンタイムが初めて行われる。",
     "keywords_ja": [
-      "メディチ家がフィレンツェから追放される"
+      "国会でクエスチョンタイムが初めて行われる"
     ],
     "keywords_en": [
-      "メディチ家"
+      "国会でクエスチョンタイムが初め"
     ]
   },
   "paper": {
-    "title": "‘来来, 大家一起玩’ (C’mon, let’s play together): grassroots planning from a Bourdieusian perspective",
-    "author": "Curdt-Christiansen, X. ほか",
+    "title": "Higher normal schools in early Republican China and the social-cultural transformation Higher normal schools in early Republican China and the social-cultural transformation (民初高师与社会文化转型), by Caidan Yang, Beijing, Commercial Press, 2021, 376 pp., ¥120.00 (paperback), ISBN 978-7-100-19880-6",
+    "author": "Liu, X.",
     "authors": [
-      "Curdt-Christiansen, X.",
-      "Li, L.",
-      "Chai, S."
+      "Liu, X."
     ],
     "connection": "",
-    "journal": "Journal of Multilingual and Multicultural Development",
-    "issn": "0143-4632",
-    "year": 2024,
-    "doi": "10.1080/01434632.2024.2321392",
-    "doi_url": "https://doi.org/10.1080/01434632.2024.2321392",
+    "journal": "History of Education",
+    "issn": "0046-760X",
+    "year": 2023,
+    "doi": "10.1080/0046760x.2023.2184505",
+    "doi_url": "https://doi.org/10.1080/0046760x.2023.2184505",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
