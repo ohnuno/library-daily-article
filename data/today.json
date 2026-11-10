@@ -1,32 +1,35 @@
 {
-  "date": "2026-11-10",
-  "generated_at": "2026-11-10T08:49:11+09:00",
+  "date": "2026-11-11",
+  "generated_at": "2026-11-11T06:22:09+09:00",
   "flow": "primary",
   "event": {
-    "year": "1999",
-    "text": "国会でクエスチョンタイムが初めて行われる。"
+    "year": "2015",
+    "text": "三菱航空機が開発したジェット旅客機MRJ（後にMitsubishi SpaceJetに改称）が初飛行。"
   },
   "today_topic": {
-    "text": "1999年 - 国会でクエスチョンタイムが初めて行われる。",
+    "text": "2015年 - 三菱航空機が開発したジェット旅客機MRJ（後にMitsubishi SpaceJetに改称）が初飛行。",
     "keywords_ja": [
-      "国会でクエスチョンタイムが初めて行われる"
+      "三菱航空機が開発したジェット旅客機",
+      "後に",
+      "に改称",
+      "が初飛行"
     ],
     "keywords_en": [
-      "国会でクエスチョンタイムが初め"
+      "三菱航空機"
     ]
   },
   "paper": {
-    "title": "Higher normal schools in early Republican China and the social-cultural transformation Higher normal schools in early Republican China and the social-cultural transformation (民初高师与社会文化转型), by Caidan Yang, Beijing, Commercial Press, 2021, 376 pp., ¥120.00 (paperback), ISBN 978-7-100-19880-6",
-    "author": "Liu, X.",
+    "title": "Rational choice and the Chinese discourse on the Unity of the Three Religions (sanjiao heyi三教合一)",
+    "author": "Gentz, J.",
     "authors": [
-      "Liu, X."
+      "Gentz, J."
     ],
     "connection": "",
-    "journal": "History of Education",
-    "issn": "0046-760X",
-    "year": 2023,
-    "doi": "10.1080/0046760x.2023.2184505",
-    "doi_url": "https://doi.org/10.1080/0046760x.2023.2184505",
+    "journal": "Religion",
+    "issn": "0048-721X",
+    "year": 2011,
+    "doi": "10.1080/0048721x.2011.624692",
+    "doi_url": "https://doi.org/10.1080/0048721x.2011.624692",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
