@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-12",
+  "generated_at": "2026-11-12T07:05:23+09:00",
+  "flow": "primary",
+  "event": {
+    "year": "1967",
+    "text": "第二次羽田事件。佐藤栄作首相訪米に反対する学生デモと警官隊が羽田空港で衝突。"
+  },
+  "today_topic": {
+    "text": "1967年 - 第二次羽田事件。佐藤栄作首相訪米に反対する学生デモと警官隊が羽田空港で衝突。",
+    "keywords_ja": [
+      "第二次羽田事件",
+      "佐藤栄作首相訪米に反対する学生デモと警官隊が羽田空港で衝突"
+    ],
+    "keywords_en": [
+      "第二次羽田事件"
+    ]
+  },
+  "paper": {
+    "title": "Yuyan·Minzu·Guojia·Lishi: Cuntian Xiongerlang Zhongguo Yanjiu Wenji",
+    "author": "Dongjie, W.",
+    "authors": [
+      "Dongjie, W."
+    ],
+    "connection": "",
+    "journal": "Chinese Studies in History",
+    "issn": "0009-4633",
+    "year": 2025,
+    "doi": "10.1080/00094633.2025.2494430",
+    "doi_url": "https://doi.org/10.1080/00094633.2025.2494430",
+    "abstract_original": "",
+    "abstract_ja": "",
+    "db_id": "taylor-francis-ssh"
+  },
+  "database": {
+    "id": "taylor-francis-ssh",
+    "name": "Taylor & Francis SSH Library",
+    "description": "社会科学・人文科学分野の1,400誌以上を収録するジャーナルパッケージ。1997年以降のバックファイルにアクセス可能。",
+    "url": "https://www.tandfonline.com/",
+    "access_note": "大学ネットワークまたはVPN接続が必要",
+    "ip_restricted": true
+  }
+}

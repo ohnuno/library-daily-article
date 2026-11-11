@@ -1,35 +1,33 @@
 {
-  "date": "2026-11-11",
-  "generated_at": "2026-11-11T06:22:09+09:00",
+  "date": "2026-11-12",
+  "generated_at": "2026-11-12T07:05:23+09:00",
   "flow": "primary",
   "event": {
-    "year": "2015",
-    "text": "三菱航空機が開発したジェット旅客機MRJ（後にMitsubishi SpaceJetに改称）が初飛行。"
+    "year": "1967",
+    "text": "第二次羽田事件。佐藤栄作首相訪米に反対する学生デモと警官隊が羽田空港で衝突。"
   },
   "today_topic": {
-    "text": "2015年 - 三菱航空機が開発したジェット旅客機MRJ（後にMitsubishi SpaceJetに改称）が初飛行。",
+    "text": "1967年 - 第二次羽田事件。佐藤栄作首相訪米に反対する学生デモと警官隊が羽田空港で衝突。",
     "keywords_ja": [
-      "三菱航空機が開発したジェット旅客機",
-      "後に",
-      "に改称",
-      "が初飛行"
+      "第二次羽田事件",
+      "佐藤栄作首相訪米に反対する学生デモと警官隊が羽田空港で衝突"
     ],
     "keywords_en": [
-      "三菱航空機"
+      "第二次羽田事件"
     ]
   },
   "paper": {
-    "title": "Rational choice and the Chinese discourse on the Unity of the Three Religions (sanjiao heyi三教合一)",
-    "author": "Gentz, J.",
+    "title": "Yuyan·Minzu·Guojia·Lishi: Cuntian Xiongerlang Zhongguo Yanjiu Wenji",
+    "author": "Dongjie, W.",
     "authors": [
-      "Gentz, J."
+      "Dongjie, W."
     ],
     "connection": "",
-    "journal": "Religion",
-    "issn": "0048-721X",
-    "year": 2011,
-    "doi": "10.1080/0048721x.2011.624692",
-    "doi_url": "https://doi.org/10.1080/0048721x.2011.624692",
+    "journal": "Chinese Studies in History",
+    "issn": "0009-4633",
+    "year": 2025,
+    "doi": "10.1080/00094633.2025.2494430",
+    "doi_url": "https://doi.org/10.1080/00094633.2025.2494430",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
