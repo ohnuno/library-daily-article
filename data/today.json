@@ -1,33 +1,32 @@
 {
-  "date": "2026-11-12",
-  "generated_at": "2026-11-12T07:05:23+09:00",
+  "date": "2026-11-13",
+  "generated_at": "2026-11-13T06:52:45+09:00",
   "flow": "primary",
   "event": {
-    "year": "1967",
-    "text": "第二次羽田事件。佐藤栄作首相訪米に反対する学生デモと警官隊が羽田空港で衝突。"
+    "year": "1974",
+    "text": "不可解な放射能汚染を受けていたカレン・シルクウッドがオクラホマ州で謎の事故死。"
   },
   "today_topic": {
-    "text": "1967年 - 第二次羽田事件。佐藤栄作首相訪米に反対する学生デモと警官隊が羽田空港で衝突。",
+    "text": "1974年 - 不可解な放射能汚染を受けていたカレン・シルクウッドがオクラホマ州で謎の事故死。",
     "keywords_ja": [
-      "第二次羽田事件",
-      "佐藤栄作首相訪米に反対する学生デモと警官隊が羽田空港で衝突"
+      "不可解な放射能汚染を受けていたカレン・シルクウッドがオクラホマ州で謎の事故死"
     ],
     "keywords_en": [
-      "第二次羽田事件"
+      "不可解な放射能汚染"
     ]
   },
   "paper": {
-    "title": "Yuyan·Minzu·Guojia·Lishi: Cuntian Xiongerlang Zhongguo Yanjiu Wenji",
-    "author": "Dongjie, W.",
+    "title": "Gu Mengyu de qinggao: Zhongguo jindaishi de lingyizhong keneng 顧孟餘的清高：中國近代史的另一種可能 (above and apart: Gu Mengyu and His Search for an Alternative Path in Modern Chinese History).",
+    "author": "Wang, Q.",
     "authors": [
-      "Dongjie, W."
+      "Wang, Q."
     ],
     "connection": "",
     "journal": "Chinese Studies in History",
     "issn": "0009-4633",
-    "year": 2025,
-    "doi": "10.1080/00094633.2025.2494430",
-    "doi_url": "https://doi.org/10.1080/00094633.2025.2494430",
+    "year": 2022,
+    "doi": "10.1080/00094633.2022.2079358",
+    "doi_url": "https://doi.org/10.1080/00094633.2022.2079358",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
