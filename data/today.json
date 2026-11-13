@@ -1,32 +1,33 @@
 {
-  "date": "2026-11-13",
-  "generated_at": "2026-11-13T06:52:45+09:00",
+  "date": "2026-11-14",
+  "generated_at": "2026-11-14T06:28:46+09:00",
   "flow": "primary",
   "event": {
-    "year": "1974",
-    "text": "不可解な放射能汚染を受けていたカレン・シルクウッドがオクラホマ州で謎の事故死。"
+    "year": "",
+    "text": "1804年（文化元年10月13日）- 華岡青洲が世界初の麻酔を使った手術に成功。"
   },
   "today_topic": {
-    "text": "1974年 - 不可解な放射能汚染を受けていたカレン・シルクウッドがオクラホマ州で謎の事故死。",
+    "text": "1804年（文化元年10月13日）- 華岡青洲が世界初の麻酔を使った手術に成功。",
     "keywords_ja": [
-      "不可解な放射能汚染を受けていたカレン・シルクウッドがオクラホマ州で謎の事故死"
+      "文化元年",
+      "華岡青洲が世界初の麻酔を使った手術に成功"
     ],
     "keywords_en": [
-      "不可解な放射能汚染"
+      "1804年（文化元年10月13"
     ]
   },
   "paper": {
-    "title": "Gu Mengyu de qinggao: Zhongguo jindaishi de lingyizhong keneng 顧孟餘的清高：中國近代史的另一種可能 (above and apart: Gu Mengyu and His Search for an Alternative Path in Modern Chinese History).",
-    "author": "Wang, Q.",
+    "title": "China’s Pathway towards Maritime Civilisation",
+    "author": "Zou, X.",
     "authors": [
-      "Wang, Q."
+      "Zou, X."
     ],
     "connection": "",
-    "journal": "Chinese Studies in History",
-    "issn": "0009-4633",
-    "year": 2022,
-    "doi": "10.1080/00094633.2022.2079358",
-    "doi_url": "https://doi.org/10.1080/00094633.2022.2079358",
+    "journal": "Journal of Contemporary Asia",
+    "issn": "0047-2336",
+    "year": 2019,
+    "doi": "10.1080/00472336.2019.1600712",
+    "doi_url": "https://doi.org/10.1080/00472336.2019.1600712",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
