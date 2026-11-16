@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-17",
+  "generated_at": "2026-11-17T08:47:09+09:00",
+  "flow": "primary",
+  "event": {
+    "year": "1970",
+    "text": "ソ連の無人月探査機「ルナ17号」が月面に着陸。世界初の月面車による探査を開始する。"
+  },
+  "today_topic": {
+    "text": "1970年 - ソ連の無人月探査機「ルナ17号」が月面に着陸。世界初の月面車による探査を開始する。",
+    "keywords_ja": [
+      "ソ連の無人月探査機",
+      "ルナ",
+      "が月面に着陸",
+      "世界初の月面車による探査を開始する"
+    ],
+    "keywords_en": [
+      "ルナ17号"
+    ]
+  },
+  "paper": {
+    "title": "Letter to the Editor",
+    "author": "Rottier, J.",
+    "authors": [
+      "Rottier, J."
+    ],
+    "connection": "",
+    "journal": "Middle School Journal",
+    "issn": "0094-0771",
+    "year": 1986,
+    "doi": "10.1080/00940771.1986.11495738",
+    "doi_url": "https://doi.org/10.1080/00940771.1986.11495738",
+    "abstract_original": "",
+    "abstract_ja": "",
+    "db_id": "taylor-francis-ssh"
+  },
+  "database": {
+    "id": "taylor-francis-ssh",
+    "name": "Taylor & Francis SSH Library",
+    "description": "社会科学・人文科学分野の1,400誌以上を収録するジャーナルパッケージ。1997年以降のバックファイルにアクセス可能。",
+    "url": "https://www.tandfonline.com/",
+    "access_note": "大学ネットワークまたはVPN接続が必要",
+    "ip_restricted": true
+  }
+}

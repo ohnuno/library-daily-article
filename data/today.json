@@ -1,33 +1,35 @@
 {
-  "date": "2026-11-14",
-  "generated_at": "2026-11-14T06:28:46+09:00",
+  "date": "2026-11-17",
+  "generated_at": "2026-11-17T08:47:09+09:00",
   "flow": "primary",
   "event": {
-    "year": "",
-    "text": "1804年（文化元年10月13日）- 華岡青洲が世界初の麻酔を使った手術に成功。"
+    "year": "1970",
+    "text": "ソ連の無人月探査機「ルナ17号」が月面に着陸。世界初の月面車による探査を開始する。"
   },
   "today_topic": {
-    "text": "1804年（文化元年10月13日）- 華岡青洲が世界初の麻酔を使った手術に成功。",
+    "text": "1970年 - ソ連の無人月探査機「ルナ17号」が月面に着陸。世界初の月面車による探査を開始する。",
     "keywords_ja": [
-      "文化元年",
-      "華岡青洲が世界初の麻酔を使った手術に成功"
+      "ソ連の無人月探査機",
+      "ルナ",
+      "が月面に着陸",
+      "世界初の月面車による探査を開始する"
     ],
     "keywords_en": [
-      "1804年（文化元年10月13"
+      "ルナ17号"
     ]
   },
   "paper": {
-    "title": "China’s Pathway towards Maritime Civilisation",
-    "author": "Zou, X.",
+    "title": "Letter to the Editor",
+    "author": "Rottier, J.",
     "authors": [
-      "Zou, X."
+      "Rottier, J."
     ],
     "connection": "",
-    "journal": "Journal of Contemporary Asia",
-    "issn": "0047-2336",
-    "year": 2019,
-    "doi": "10.1080/00472336.2019.1600712",
-    "doi_url": "https://doi.org/10.1080/00472336.2019.1600712",
+    "journal": "Middle School Journal",
+    "issn": "0094-0771",
+    "year": 1986,
+    "doi": "10.1080/00940771.1986.11495738",
+    "doi_url": "https://doi.org/10.1080/00940771.1986.11495738",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
