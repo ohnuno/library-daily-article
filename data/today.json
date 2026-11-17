@@ -1,35 +1,33 @@
 {
-  "date": "2026-11-17",
-  "generated_at": "2026-11-17T08:47:09+09:00",
+  "date": "2026-11-18",
+  "generated_at": "2026-11-18T08:02:40+09:00",
   "flow": "primary",
   "event": {
-    "year": "1970",
-    "text": "ソ連の無人月探査機「ルナ17号」が月面に着陸。世界初の月面車による探査を開始する。"
+    "year": "",
+    "text": "794年（延暦13年10月22日） - 桓武天皇が長岡京から平安京へ遷都。"
   },
   "today_topic": {
-    "text": "1970年 - ソ連の無人月探査機「ルナ17号」が月面に着陸。世界初の月面車による探査を開始する。",
+    "text": "794年（延暦13年10月22日） - 桓武天皇が長岡京から平安京へ遷都。",
     "keywords_ja": [
-      "ソ連の無人月探査機",
-      "ルナ",
-      "が月面に着陸",
-      "世界初の月面車による探査を開始する"
+      "延暦",
+      "桓武天皇が長岡京から平安京へ遷都"
     ],
     "keywords_en": [
-      "ルナ17号"
+      "794年（延暦13年10月22"
     ]
   },
   "paper": {
-    "title": "Letter to the Editor",
-    "author": "Rottier, J.",
+    "title": "China’s Pathway towards Maritime Civilisation",
+    "author": "Zou, X.",
     "authors": [
-      "Rottier, J."
+      "Zou, X."
     ],
     "connection": "",
-    "journal": "Middle School Journal",
-    "issn": "0094-0771",
-    "year": 1986,
-    "doi": "10.1080/00940771.1986.11495738",
-    "doi_url": "https://doi.org/10.1080/00940771.1986.11495738",
+    "journal": "Journal of Contemporary Asia",
+    "issn": "0047-2336",
+    "year": 2019,
+    "doi": "10.1080/00472336.2019.1600712",
+    "doi_url": "https://doi.org/10.1080/00472336.2019.1600712",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
