@@ -1,33 +1,36 @@
 {
-  "date": "2026-11-18",
-  "generated_at": "2026-11-18T08:02:40+09:00",
+  "date": "2026-11-19",
+  "generated_at": "2026-11-19T07:39:09+09:00",
   "flow": "primary",
   "event": {
-    "year": "",
-    "text": "794年（延暦13年10月22日） - 桓武天皇が長岡京から平安京へ遷都。"
+    "year": "1956",
+    "text": "日本国有鉄道、東京駅 - 博多駅間に特急「あさかぜ」運転開始。"
   },
   "today_topic": {
-    "text": "794年（延暦13年10月22日） - 桓武天皇が長岡京から平安京へ遷都。",
+    "text": "1956年 - 日本国有鉄道、東京駅 - 博多駅間に特急「あさかぜ」運転開始。",
     "keywords_ja": [
-      "延暦",
-      "桓武天皇が長岡京から平安京へ遷都"
+      "日本国有鉄道",
+      "東京駅",
+      "博多駅間に特急",
+      "あさかぜ",
+      "運転開始"
     ],
     "keywords_en": [
-      "794年（延暦13年10月22"
+      "日本国有鉄道"
     ]
   },
   "paper": {
-    "title": "China’s Pathway towards Maritime Civilisation",
-    "author": "Zou, X.",
+    "title": "Stiegler on youth: Florian, Greta, Parrhesia",
+    "author": "Bradley, J.",
     "authors": [
-      "Zou, X."
+      "Bradley, J."
     ],
     "connection": "",
-    "journal": "Journal of Contemporary Asia",
-    "issn": "0047-2336",
-    "year": 2019,
-    "doi": "10.1080/00472336.2019.1600712",
-    "doi_url": "https://doi.org/10.1080/00472336.2019.1600712",
+    "journal": "Educational Philosophy and Theory",
+    "issn": "0013-1857",
+    "year": 2026,
+    "doi": "10.1080/00131857.2026.2726403",
+    "doi_url": "https://doi.org/10.1080/00131857.2026.2726403",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"

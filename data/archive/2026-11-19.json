@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-19",
+  "generated_at": "2026-11-19T07:39:09+09:00",
+  "flow": "primary",
+  "event": {
+    "year": "1956",
+    "text": "日本国有鉄道、東京駅 - 博多駅間に特急「あさかぜ」運転開始。"
+  },
+  "today_topic": {
+    "text": "1956年 - 日本国有鉄道、東京駅 - 博多駅間に特急「あさかぜ」運転開始。",
+    "keywords_ja": [
+      "日本国有鉄道",
+      "東京駅",
+      "博多駅間に特急",
+      "あさかぜ",
+      "運転開始"
+    ],
+    "keywords_en": [
+      "日本国有鉄道"
+    ]
+  },
+  "paper": {
+    "title": "Stiegler on youth: Florian, Greta, Parrhesia",
+    "author": "Bradley, J.",
+    "authors": [
+      "Bradley, J."
+    ],
+    "connection": "",
+    "journal": "Educational Philosophy and Theory",
+    "issn": "0013-1857",
+    "year": 2026,
+    "doi": "10.1080/00131857.2026.2726403",
+    "doi_url": "https://doi.org/10.1080/00131857.2026.2726403",
+    "abstract_original": "",
+    "abstract_ja": "",
+    "db_id": "taylor-francis-ssh"
+  },
+  "database": {
+    "id": "taylor-francis-ssh",
+    "name": "Taylor & Francis SSH Library",
+    "description": "社会科学・人文科学分野の1,400誌以上を収録するジャーナルパッケージ。1997年以降のバックファイルにアクセス可能。",
+    "url": "https://www.tandfonline.com/",
+    "access_note": "大学ネットワークまたはVPN接続が必要",
+    "ip_restricted": true
+  }
+}
