@@ -1,36 +1,35 @@
 {
-  "date": "2026-11-19",
-  "generated_at": "2026-11-19T07:39:09+09:00",
+  "date": "2026-11-20",
+  "generated_at": "2026-11-20T07:43:08+09:00",
   "flow": "primary",
   "event": {
-    "year": "1956",
-    "text": "日本国有鉄道、東京駅 - 博多駅間に特急「あさかぜ」運転開始。"
+    "year": "1998",
+    "text": "アメリカマサチューセッツ州ボストン近郊でトランスジェンダーのが惨殺された（トランスジェンダー追悼の日の由来）。"
   },
   "today_topic": {
-    "text": "1956年 - 日本国有鉄道、東京駅 - 博多駅間に特急「あさかぜ」運転開始。",
+    "text": "1998年 - アメリカマサチューセッツ州ボストン近郊でトランスジェンダーのが惨殺された（トランスジェンダー追悼の日の由来）。",
     "keywords_ja": [
-      "日本国有鉄道",
-      "東京駅",
-      "博多駅間に特急",
-      "あさかぜ",
-      "運転開始"
+      "アメリカマサチューセッツ州ボストン近郊でトランスジェンダーのが惨殺された",
+      "トランスジェンダー追悼の日の由来"
     ],
     "keywords_en": [
-      "日本国有鉄道"
+      "アメリカマサチューセッツ州ボス"
     ]
   },
   "paper": {
-    "title": "Stiegler on youth: Florian, Greta, Parrhesia",
-    "author": "Bradley, J.",
+    "title": "A critical discourse study of cultural and national identity (re)construction in Taiwanese high school EFL textbooks",
+    "author": "Hua, X. ほか",
     "authors": [
-      "Bradley, J."
+      "Hua, X.",
+      "Yu, Y.",
+      "Chan, T."
     ],
     "connection": "",
-    "journal": "Educational Philosophy and Theory",
-    "issn": "0013-1857",
-    "year": 2026,
-    "doi": "10.1080/00131857.2026.2726403",
-    "doi_url": "https://doi.org/10.1080/00131857.2026.2726403",
+    "journal": "Discourse: Studies in the Cultural Politics of Education",
+    "issn": "0159-6306",
+    "year": 2024,
+    "doi": "10.1080/01596306.2024.2412596",
+    "doi_url": "https://doi.org/10.1080/01596306.2024.2412596",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
