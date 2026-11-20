@@ -1,35 +1,33 @@
 {
-  "date": "2026-11-20",
-  "generated_at": "2026-11-20T07:43:08+09:00",
+  "date": "2026-11-21",
+  "generated_at": "2026-11-21T07:16:53+09:00",
   "flow": "primary",
   "event": {
-    "year": "1998",
-    "text": "アメリカマサチューセッツ州ボストン近郊でトランスジェンダーのが惨殺された（トランスジェンダー追悼の日の由来）。"
+    "year": "1996",
+    "text": "阪和銀行が経営破綻。日本の銀行としては戦後初。"
   },
   "today_topic": {
-    "text": "1998年 - アメリカマサチューセッツ州ボストン近郊でトランスジェンダーのが惨殺された（トランスジェンダー追悼の日の由来）。",
+    "text": "1996年 - 阪和銀行が経営破綻。日本の銀行としては戦後初。",
     "keywords_ja": [
-      "アメリカマサチューセッツ州ボストン近郊でトランスジェンダーのが惨殺された",
-      "トランスジェンダー追悼の日の由来"
+      "阪和銀行が経営破綻",
+      "日本の銀行としては戦後初"
     ],
     "keywords_en": [
-      "アメリカマサチューセッツ州ボス"
+      "阪和銀行"
     ]
   },
   "paper": {
-    "title": "A critical discourse study of cultural and national identity (re)construction in Taiwanese high school EFL textbooks",
-    "author": "Hua, X. ほか",
+    "title": "Mingdai jinyinqi yanjiu 明代金銀器研究 (A Study of the Gold and Silver Wares of the Ming)",
+    "author": "Chen, H.",
     "authors": [
-      "Hua, X.",
-      "Yu, Y.",
-      "Chan, T."
+      "Chen, H."
     ],
     "connection": "",
-    "journal": "Discourse: Studies in the Cultural Politics of Education",
-    "issn": "0159-6306",
-    "year": 2024,
-    "doi": "10.1080/01596306.2024.2412596",
-    "doi_url": "https://doi.org/10.1080/01596306.2024.2412596",
+    "journal": "Chinese Studies in History",
+    "issn": "0009-4633",
+    "year": 2026,
+    "doi": "10.1080/00094633.2026.2627315",
+    "doi_url": "https://doi.org/10.1080/00094633.2026.2627315",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"

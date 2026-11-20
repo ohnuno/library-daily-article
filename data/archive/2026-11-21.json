@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-21",
+  "generated_at": "2026-11-21T07:16:53+09:00",
+  "flow": "primary",
+  "event": {
+    "year": "1996",
+    "text": "阪和銀行が経営破綻。日本の銀行としては戦後初。"
+  },
+  "today_topic": {
+    "text": "1996年 - 阪和銀行が経営破綻。日本の銀行としては戦後初。",
+    "keywords_ja": [
+      "阪和銀行が経営破綻",
+      "日本の銀行としては戦後初"
+    ],
+    "keywords_en": [
+      "阪和銀行"
+    ]
+  },
+  "paper": {
+    "title": "Mingdai jinyinqi yanjiu 明代金銀器研究 (A Study of the Gold and Silver Wares of the Ming)",
+    "author": "Chen, H.",
+    "authors": [
+      "Chen, H."
+    ],
+    "connection": "",
+    "journal": "Chinese Studies in History",
+    "issn": "0009-4633",
+    "year": 2026,
+    "doi": "10.1080/00094633.2026.2627315",
+    "doi_url": "https://doi.org/10.1080/00094633.2026.2627315",
+    "abstract_original": "",
+    "abstract_ja": "",
+    "db_id": "taylor-francis-ssh"
+  },
+  "database": {
+    "id": "taylor-francis-ssh",
+    "name": "Taylor & Francis SSH Library",
+    "description": "社会科学・人文科学分野の1,400誌以上を収録するジャーナルパッケージ。1997年以降のバックファイルにアクセス可能。",
+    "url": "https://www.tandfonline.com/",
+    "access_note": "大学ネットワークまたはVPN接続が必要",
+    "ip_restricted": true
+  }
+}
