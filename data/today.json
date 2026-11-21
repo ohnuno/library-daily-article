@@ -1,33 +1,33 @@
 {
-  "date": "2026-11-21",
-  "generated_at": "2026-11-21T07:16:53+09:00",
+  "date": "2026-11-22",
+  "generated_at": "2026-11-22T05:57:59+09:00",
   "flow": "primary",
   "event": {
-    "year": "1996",
-    "text": "阪和銀行が経営破綻。日本の銀行としては戦後初。"
+    "year": "1943",
+    "text": "第二次世界大戦: 日本の戦後処理についてのカイロ会談が行われる。"
   },
   "today_topic": {
-    "text": "1996年 - 阪和銀行が経営破綻。日本の銀行としては戦後初。",
+    "text": "1943年 - 第二次世界大戦: 日本の戦後処理についてのカイロ会談が行われる。",
     "keywords_ja": [
-      "阪和銀行が経営破綻",
-      "日本の銀行としては戦後初"
+      "第二次世界大戦",
+      "日本の戦後処理についてのカイロ会談が行われる"
     ],
     "keywords_en": [
-      "阪和銀行"
+      "第二次世界大戦:"
     ]
   },
   "paper": {
-    "title": "Mingdai jinyinqi yanjiu 明代金銀器研究 (A Study of the Gold and Silver Wares of the Ming)",
-    "author": "Chen, H.",
+    "title": "Yujian huangdong: 18-19 shiji zhujiangkou de xiaorenwu yu dashijie 遇見黃東：18-19世紀珠江口的小人物和大世界 (Encountering Whang Tong: Little People and the Big World in the Eighteenth and Nineteenth Century Pearl River Estuary)",
+    "author": "Yushu, C.",
     "authors": [
-      "Chen, H."
+      "Yushu, C."
     ],
     "connection": "",
     "journal": "Chinese Studies in History",
     "issn": "0009-4633",
-    "year": 2026,
-    "doi": "10.1080/00094633.2026.2627315",
-    "doi_url": "https://doi.org/10.1080/00094633.2026.2627315",
+    "year": 2023,
+    "doi": "10.1080/00094633.2023.2198978",
+    "doi_url": "https://doi.org/10.1080/00094633.2023.2198978",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
