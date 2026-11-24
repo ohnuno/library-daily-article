@@ -1,33 +1,32 @@
 {
-  "date": "2026-11-22",
-  "generated_at": "2026-11-22T05:57:59+09:00",
+  "date": "2026-11-24",
+  "generated_at": "2026-11-24T11:27:25+09:00",
   "flow": "primary",
   "event": {
-    "year": "1943",
-    "text": "第二次世界大戦: 日本の戦後処理についてのカイロ会談が行われる。"
+    "year": "1928",
+    "text": "山本老事件が起こる。"
   },
   "today_topic": {
-    "text": "1943年 - 第二次世界大戦: 日本の戦後処理についてのカイロ会談が行われる。",
+    "text": "1928年 - 山本老事件が起こる。",
     "keywords_ja": [
-      "第二次世界大戦",
-      "日本の戦後処理についてのカイロ会談が行われる"
+      "山本老事件が起こる"
     ],
     "keywords_en": [
-      "第二次世界大戦:"
+      "山本老事件"
     ]
   },
   "paper": {
-    "title": "Yujian huangdong: 18-19 shiji zhujiangkou de xiaorenwu yu dashijie 遇見黃東：18-19世紀珠江口的小人物和大世界 (Encountering Whang Tong: Little People and the Big World in the Eighteenth and Nineteenth Century Pearl River Estuary)",
-    "author": "Yushu, C.",
+    "title": "Stiegler on youth: Florian, Greta, Parrhesia",
+    "author": "Bradley, J.",
     "authors": [
-      "Yushu, C."
+      "Bradley, J."
     ],
     "connection": "",
-    "journal": "Chinese Studies in History",
-    "issn": "0009-4633",
-    "year": 2023,
-    "doi": "10.1080/00094633.2023.2198978",
-    "doi_url": "https://doi.org/10.1080/00094633.2023.2198978",
+    "journal": "Educational Philosophy and Theory",
+    "issn": "0013-1857",
+    "year": 2026,
+    "doi": "10.1080/00131857.2026.2726403",
+    "doi_url": "https://doi.org/10.1080/00131857.2026.2726403",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
