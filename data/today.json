@@ -1,36 +1,33 @@
 {
-  "date": "2026-11-26",
-  "generated_at": "2026-11-26T08:43:16+09:00",
+  "date": "2026-11-28",
+  "generated_at": "2026-11-28T08:37:48+09:00",
   "flow": "primary",
   "event": {
-    "year": "2005",
-    "text": "日本の小惑星探査機「はやぶさ」が小惑星イトカワに着地し、岩石の採取を行う。2010年6月13日にカプセルが帰還。"
+    "year": "1983",
+    "text": "衆議院解散（田中判決解散）。"
   },
   "today_topic": {
-    "text": "2005年 - 日本の小惑星探査機「はやぶさ」が小惑星イトカワに着地し、岩石の採取を行う。2010年6月13日にカプセルが帰還。",
+    "text": "1983年 - 衆議院解散（田中判決解散）。",
     "keywords_ja": [
-      "日本の小惑星探査機",
-      "はやぶさ",
-      "が小惑星イトカワに着地し",
-      "岩石の採取を行う",
-      "日にカプセルが帰還"
+      "衆議院解散",
+      "田中判決解散"
     ],
     "keywords_en": [
-      "はやぶさ"
+      "衆議院解散（田中判決解散）"
     ]
   },
   "paper": {
-    "title": "Mindai towa nanika: Kiki no Sekaishi to Higashi Ajia",
-    "author": "Minzhi, Y.",
+    "title": "Recent Chinese Books in Ming Studies",
+    "author": "Xie, Y.",
     "authors": [
-      "Minzhi, Y."
+      "Xie, Y."
     ],
     "connection": "",
-    "journal": "Chinese Studies in History",
-    "issn": "0009-4633",
-    "year": 2025,
-    "doi": "10.1080/00094633.2025.2504800",
-    "doi_url": "https://doi.org/10.1080/00094633.2025.2504800",
+    "journal": "Ming Studies",
+    "issn": "0147-037X",
+    "year": 2018,
+    "doi": "10.1080/0147037x.2018.1510133",
+    "doi_url": "https://doi.org/10.1080/0147037x.2018.1510133",
     "abstract_original": "",
     "abstract_ja": "",
     "db_id": "taylor-francis-ssh"
